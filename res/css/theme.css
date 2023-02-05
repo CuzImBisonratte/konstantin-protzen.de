@@ -1,0 +1,15 @@
+#themeswitch {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: block;
+    color: var(--accent-color);
+    font-size: 2rem;
+}
+
+#themeswitch>div {
+    display: block;
+    transition: 0.5s;
+}

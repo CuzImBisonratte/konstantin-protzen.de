@@ -1,0 +1,100 @@
+main {
+    height: 100%;
+    width: 100%;
+    border-radius: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 4rem;
+    grid-template-rows: auto 1fr auto;
+    gap: 0px 1rem;
+    grid-auto-flow: row;
+    grid-template-areas: "main-mainview main-categories" "main-mainview ." "main-mainview main-arrows";
+}
+
+
+/* 
+Category buttons
+*/
+
+.main-categories {
+    grid-area: main-categories;
+    background-color: var(--background3-color);
+    font-size: 2rem;
+    border-radius: 2rem;
+}
+
+.main-categories>i {
+    display: grid;
+    place-content: center;
+    margin: auto;
+    aspect-ratio: 1/1;
+    margin-top: 0.25rem;
+    cursor: pointer;
+    transition: 0.5s color;
+}
+
+.main-categories>i:hover {
+    color: var(--accent-color);
+}
+
+
+/* 
+Arrow buttons
+*/
+
+.main-arrows {
+    grid-area: main-arrows;
+    background-color: var(--background3-color);
+    font-size: 2rem;
+    border-radius: 2rem;
+}
+
+.main-arrows>i {
+    display: grid;
+    place-content: center;
+    margin: auto;
+    aspect-ratio: 1/1;
+    margin-top: 0.25rem;
+    cursor: pointer;
+    transition: 0.5s color;
+}
+
+.main-arrows>i:hover {
+    color: var(--accent-color);
+}
+
+
+/* 
+Left side
+*/
+
+.main-mainview {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "main-overview main-slides";
+    grid-area: main-mainview;
+    background-color: var(--background2-color);
+    border-radius: 3rem;
+}
+
+
+/* 
+Overview
+*/
+
+.main-overview {
+    grid-area: main-overview;
+}
+
+
+/* 
+Slide-side
+*/
+
+.main-slides {
+    grid-area: main-slides;
+    background-color: var(--background3-color);
+    border-radius: 3rem;
+}
