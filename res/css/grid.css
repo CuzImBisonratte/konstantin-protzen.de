@@ -92,6 +92,7 @@ Profile
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "profile-image" "profile-title" "profile-socials";
+    color: var(--background2-color);
 }
 
 .profile-image {
@@ -145,7 +146,7 @@ Profile
 }
 
 .profile-socials i:hover {
-    color: var(--background2-color);
+    transform: scale(1.125) translateY(-0.25rem);
 }
 
 
