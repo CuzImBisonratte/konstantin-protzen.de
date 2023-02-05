@@ -73,19 +73,79 @@ Left side
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "main-overview main-slides";
+    grid-template-areas: "main-profile main-slides";
     grid-area: main-mainview;
-    background-color: var(--background2-color);
+    background-color: var(--accent-color);
     border-radius: 3rem;
 }
 
 
 /* 
-Overview
+Profile
 */
 
-.main-overview {
-    grid-area: main-overview;
+.main-profile {
+    grid-area: main-profile;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "profile-image" "profile-title" "profile-socials";
+}
+
+.profile-image {
+    grid-area: profile-image;
+    display: grid;
+    place-items: center;
+    margin-top: 15%;
+}
+
+.profile-image img {
+    width: 65%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 0.25rem solid var(--accent2-color);
+}
+
+.profile-title {
+    grid-area: profile-title;
+    display: grid;
+    place-items: center;
+}
+
+.profile-title div {
+    width: fit-content;
+    height: fit-content;
+}
+
+.profile-title p,
+.profile-title h1 {
+    text-align: center;
+}
+
+.profile-socials {
+    grid-area: profile-socials;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 1rem;
+    padding-bottom: 3rem;
+}
+
+.profile-socials i {
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: 0.5s;
+    display: inline-block;
+    margin: 0.25rem 0.5rem;
+}
+
+.profile-socials i:hover {
+    color: var(--background2-color);
 }
 
 
@@ -95,6 +155,6 @@ Slide-side
 
 .main-slides {
     grid-area: main-slides;
-    background-color: var(--background3-color);
+    background-color: var(--background2-color);
     border-radius: 3rem;
 }
