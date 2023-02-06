@@ -1,0 +1,23 @@
+/* 
+Home slide
+*/
+
+#slide-home {
+    display: grid;
+    place-items: center;
+}
+
+#slide-home>div>h1,
+#slide-home>div>h2 {
+    text-align: center;
+    margin: 0.25rem;
+}
+
+#slide-home>div>h1 {
+    font-size: 3rem;
+}
+
+#slide-home>div>h2 {
+    font-size: 1.25rem;
+    filter: opacity(0.5);
+}
