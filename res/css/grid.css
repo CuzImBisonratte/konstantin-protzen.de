@@ -1,6 +1,8 @@
 main {
     height: 100%;
     width: 100%;
+    max-width: 1400px;
+    margin: auto;
     border-radius: 3rem;
     display: grid;
     grid-template-columns: 1fr 4rem;
@@ -23,6 +25,7 @@ Category buttons
 }
 
 .main-categories>i {
+    border-radius: 2rem;
     display: grid;
     place-content: center;
     margin: auto;
@@ -76,7 +79,7 @@ Left side
     grid-template-areas: "main-profile main-slides";
     grid-area: main-mainview;
     background-color: var(--accent-color);
-    border-radius: 3rem;
+    border-radius: 3.125rem;
 }
 
 
