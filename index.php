@@ -1,3 +1,9 @@
+<?php 
+
+// Get the no-github values
+require_once("no-github.php");
+
+?>
 <!DOCTYPE html>
 <html lang="de">
 
@@ -69,8 +75,8 @@
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit animi, dolorum maxime impedit consequatur atque. Molestias blanditiis laboriosam, beatae maxime ducimus earum magni adipisci fugiat.
                         </div>
                         <div class="aboutme-facts">
-                            <span class="accent-text">E-Mail</span><span class="aboutme-fact">[REDACTED]</span><br>
-                            <span class="accent-text">Phone</span><span class="aboutme-fact">[REDACTED]</span><br>
+                            <span class="accent-text">E-Mail</span><span class="aboutme-fact"><?=CUSTOM_VALUE_EMAIL?></span><br>
+                            <span class="accent-text">Phone</span><span class="aboutme-fact"><?=CUSTOM_VALUE_PHONE?></span><br>
                             <span class="accent-text">Residence</span><span class="aboutme-fact">Germany</span><br>
                         </div>
                     </div>
