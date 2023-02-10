@@ -128,6 +128,7 @@ require_once("no-github.php");
     <script src="/res/js/themes/themes.js"></script>
     <script src="/res/js/slides.js"></script>
     <script src="/res/js/debug.js"></script>
+    <script src="/res/js/shuffleskills.js"></script>
 </body>
 
 </html>
