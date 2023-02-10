@@ -44,7 +44,7 @@ require_once("no-github.php");
         <div class="main-mainview">
             <div class="main-profile">
                 <div class="profile-image">
-                    <img src="https://source.unsplash.com/random/800x800/?portrait" alt="Portrait image">
+                    <img src="/logo.png" alt="Logo">
                 </div>
                 <div class="profile-title">
                     <div>
