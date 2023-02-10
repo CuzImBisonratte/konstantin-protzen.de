@@ -35,7 +35,7 @@ require_once("no-github.php");
             <i onclick="switchSlide(2);" class="fa-solid fa-user"></i>
             <i onclick="switchSlide(3);" class="fa-solid fa-bars-progress"></i>
             <i onclick="switchSlide(4);" class="fa-solid fa-graduation-cap"></i>
-            <i onclick="switchSlide(5);" class="fa-solid fa-envelope"></i>
+            <i onclick="location.assign('mailto:<?=CUSTOM_VALUE_EMAIL?>');" class="fa-solid fa-envelope"></i>
         </div>
         <div class="main-arrows">
             <i onclick="nextSlide();" id="arrow_up" class="fa-solid fa-angle-up arrow_nohover"></i>
