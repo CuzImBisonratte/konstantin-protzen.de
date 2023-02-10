@@ -1,5 +1,5 @@
 /* 
-Hiding slides by default
+Slide default parameters
 */
 
 .slide-hide_by_default {
@@ -70,4 +70,56 @@ Home slide
 .aboutme-fact {
     margin-left: 0.75rem;
     line-height: 2rem;
+}
+
+
+/* Education */
+
+#slide-education {
+    padding: 3rem;
+}
+
+.education-title>h1 {
+    margin: 0;
+}
+
+.education-skills_table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "education-core_skills education-other_skills";
+}
+
+.education-core_skills {
+    grid-area: education-core_skills;
+}
+
+.education-other_skills {
+    grid-area: education-other_skills;
+}
+
+.skill_list-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 95%;
+    overflow: auto;
+    flex-direction: row;
+}
+
+.skill_list-wrapper>p {
+    padding: 0.25rem;
+    border: var(--accent-color) 1px solid;
+    background-color: var(--accent-color);
+    border-radius: 0.25rem;
+    margin: 0.25rem;
+}
+
+.skills-tablerow-title {
+    border-bottom: var(--accent-color) 2px solid;
+    width: fit-content;
 }

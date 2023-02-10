@@ -81,6 +81,47 @@ require_once("no-github.php");
                         </div>
                     </div>
                 </div>
+                <div class="slide slide-hide_by_default" id="slide-education">
+                    <div>
+                        <div class="education-title">
+                            <h1>My <span class="accent-text">skills</span></h1>
+                        </div>
+                        <div class="education-skills_table">
+                            <div class="education-core_skills">
+                                <h2 class="skills-tablerow-title">Core skills</h2>
+                                <div class="skill_list-wrapper">
+                                    <p>Javascript</p>
+                                    <p>CSS3</p>
+                                    <p>HTML5</p>
+                                    <p>PHP</p>
+                                    <p>JQuery</p>
+                                    <p>node.js</p>
+                                    <p>expressjs</p>
+                                    <p>MariaDB</p>
+                                    <p>MySQL</p>
+                                </div>
+                            </div>
+                            <div class="education-other_skills">
+                                <h2 class="skills-tablerow-title">Other skills</h2>
+                                <div class="skill_list-wrapper">
+                                    <p>Wordpress</p>
+                                    <p>Unity</p>
+                                    <p>Joomla!3</p>
+                                    <p>Joomla!4</p>
+                                    <p>Git</p>
+                                    <p>Blender</p>
+                                    <p>Python</p>
+                                    <p>Grafana</p>
+                                    <p>Bootstrap</p>
+                                    <p>Chart.js</p>
+                                    <p>C++</p>
+                                    <p>Unity</p>
+                                    <p>React</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
