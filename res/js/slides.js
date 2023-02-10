@@ -3,8 +3,7 @@ const slides = [
     { "name": "home", "display": "grid" },
     { "name": "aboutme", "display": "grid" },
     { "name": "portfolio", "display": "grid" },
-    { "name": "education", "display": "grid" },
-    { "name": "contact", "display": "grid" }
+    { "name": "education", "display": "grid" }
 ];
 
 
