@@ -79,7 +79,7 @@ Left side
     grid-template-areas: "main-profile main-slides";
     grid-area: main-mainview;
     background-color: var(--accent-color);
-    border-radius: 3.125rem;
+    border-radius: 2rem;
 }
 
 
@@ -160,7 +160,8 @@ Slide-side
 .main-slides {
     grid-area: main-slides;
     background-color: var(--background2-color);
-    border-radius: 3rem;
+    border-radius: 1.5rem;
+    margin: 0.5rem;
 }
 
 .slide {
