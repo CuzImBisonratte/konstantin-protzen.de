@@ -53,10 +53,10 @@ require_once("no-github.php");
                     </div>
                 </div>
                 <div class="profile-socials">
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-discord"></i>
-                    <i class="fa-brands fa-steam"></i>
+                    <i onclick="window.open('<?=CUSTOM_VALUE_LINK_GITHUB?>', '_blank');" class="fa-brands fa-github"></i>
+                    <i onclick="window.open('<?=CUSTOM_VALUE_LINK_TWITTER?>', '_blank');" class="fa-brands fa-twitter"></i>
+                    <i onclick="window.open('<?=CUSTOM_VALUE_LINK_DISCORD?>', '_blank');" class="fa-brands fa-discord"></i>
+                    <i onclick="window.open('<?=CUSTOM_VALUE_LINK_STEAM?>', '_blank');" class="fa-brands fa-steam"></i>
                 </div>
             </div>
             <div class="main-slides">
