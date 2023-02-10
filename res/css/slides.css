@@ -1,4 +1,13 @@
 /* 
+Hiding slides by default
+*/
+
+.slide-hide_by_default {
+    display: none;
+}
+
+
+/* 
 Home slide
 */
 
@@ -26,7 +35,6 @@ Home slide
 /* About me */
 
 #slide-aboutme {
-    display: grid;
     place-content: center;
 }
 

@@ -66,7 +66,7 @@ require_once("no-github.php");
                         <h2>Webdevelopment | UI/UX Design</h2>
                     </div>
                 </div>
-                <div class="slide" id="slide-aboutme">
+                <div class="slide slide-hide_by_default" id="slide-aboutme">
                     <div class="about_me-top">
                         <div class="aboutme-title">
                             <h1>About <span class="accent-text">Me</span></h1>
