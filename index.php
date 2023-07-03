@@ -31,11 +31,11 @@ require_once("no-github.php");
     </a>
     <main>
         <div class="main-categories">
-            <i onclick="switchSlide(1);" class="fa-solid fa-house"></i>
-            <i onclick="switchSlide(2);" class="fa-solid fa-user"></i>
-            <i onclick="switchSlide(3);" class="fa-solid fa-bars-progress"></i>
-            <i onclick="switchSlide(4);" class="fa-solid fa-graduation-cap"></i>
-            <i onclick="location.assign('mailto:<?=CUSTOM_VALUE_EMAIL?>');" class="fa-solid fa-envelope"></i>
+            <i onclick="switchSlide(1);" class="fa-solid fa-house" id="category_opener-home" style="color:var(--accent2-color);"></i>
+            <i onclick="switchSlide(2);" class="fa-solid fa-user" id="category_opener-aboutme"></i>
+            <i onclick="switchSlide(3);" class="fa-solid fa-bars-progress" id="category_opener-portfolio"></i>
+            <i onclick="switchSlide(4);" class="fa-solid fa-graduation-cap" id="category_opener-education"></i>
+            <i onclick="location.assign('mailto:<?= CUSTOM_VALUE_EMAIL ?>');" class="fa-solid fa-envelope"></i>
         </div>
         <div class="main-arrows">
             <i onclick="nextSlide();" id="arrow_up" class="fa-solid fa-angle-up arrow_nohover"></i>

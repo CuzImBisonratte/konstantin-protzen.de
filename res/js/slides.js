@@ -12,9 +12,11 @@ const slide_home = document.getElementById('slide-home');
 function switchSlide(slide_num) {
     if (slide_num == current_slide) return;
     if (slide_num < 1 || slide_num > slides.length) return;
+    document.getElementById('category_opener-'+slides[current_slide - 1].name).style.color = '';
     hideSlide(current_slide);
     window.setTimeout(() => showSlide(slide_num), 250);
     current_slide = slide_num;
+    document.getElementById('category_opener-'+slides[slide_num - 1].name).style.color = 'var(--accent2-color)';
     checkArrows();
 }
 
