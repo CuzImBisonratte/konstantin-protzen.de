@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 // Get the no-github values
 require_once("no-github.php");
@@ -53,10 +53,10 @@ require_once("no-github.php");
                     </div>
                 </div>
                 <div class="profile-socials">
-                    <i onclick="window.open('<?=CUSTOM_VALUE_LINK_GITHUB?>', '_blank');" class="fa-brands fa-github"></i>
-                    <i onclick="window.open('<?=CUSTOM_VALUE_LINK_TWITTER?>', '_blank');" class="fa-brands fa-twitter"></i>
-                    <i onclick="window.open('<?=CUSTOM_VALUE_LINK_DISCORD?>', '_blank');" class="fa-brands fa-discord"></i>
-                    <i onclick="window.open('<?=CUSTOM_VALUE_LINK_STEAM?>', '_blank');" class="fa-brands fa-steam"></i>
+                    <i onclick="window.open('<?= CUSTOM_VALUE_LINK_GITHUB ?>', '_blank');" class="fa-brands fa-github"></i>
+                    <i onclick="window.open('<?= CUSTOM_VALUE_LINK_TWITTER ?>', '_blank');" class="fa-brands fa-twitter"></i>
+                    <i onclick="window.open('<?= CUSTOM_VALUE_LINK_DISCORD ?>', '_blank');" class="fa-brands fa-discord"></i>
+                    <i onclick="window.open('<?= CUSTOM_VALUE_LINK_STEAM ?>', '_blank');" class="fa-brands fa-steam"></i>
                 </div>
             </div>
             <div class="main-slides">
@@ -75,8 +75,8 @@ require_once("no-github.php");
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit animi, dolorum maxime impedit consequatur atque. Molestias blanditiis laboriosam, beatae maxime ducimus earum magni adipisci fugiat.
                         </div>
                         <div class="aboutme-facts">
-                            <span class="accent-text">E-Mail</span><span class="aboutme-fact"><?=CUSTOM_VALUE_EMAIL?></span><br>
-                            <span class="accent-text">Phone</span><span class="aboutme-fact"><?=CUSTOM_VALUE_PHONE?></span><br>
+                            <span class="accent-text">E-Mail</span><span class="aboutme-fact"><?= CUSTOM_VALUE_EMAIL ?></span><br>
+                            <span class="accent-text">Phone</span><span class="aboutme-fact"><?= CUSTOM_VALUE_PHONE ?></span><br>
                             <span class="accent-text">Residence</span><span class="aboutme-fact">Germany</span><br>
                         </div>
                     </div>
