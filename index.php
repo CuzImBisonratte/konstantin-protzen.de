@@ -121,6 +121,31 @@ require_once("no-github.php");
                             </div>
                         </div>
                     </div>
+                    <div>
+                        <div class="educationpath-title">
+                            <h1>School <span class="accent-text">Path</span></h1>
+                        </div>
+                        <div class="educationpath">
+                            <div class="educationpath-school">
+                                <span class="school-title">
+                                    <h3 class="accent-text">Secondary School</h3> (2017 - 2023)
+                                </span>
+                                <div class="school-details">
+                                    <p>Gymnasium Hohenbaden - Altsprachlich Humanistisches Gymnasium</p>
+                                    <p>Baden-Baden, Germany</p>
+                                </div>
+                            </div>
+                            <div class="educationpath-school">
+                                <span class="school-title">
+                                    <h3 class="accent-text">Primary School</h3> (2013 - 2017)
+                                </span>
+                                <div class="school-details">
+                                    <p>Klosterschule Lichtental</p>
+                                    <p>Lichtental Baden-Baden, Germany</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

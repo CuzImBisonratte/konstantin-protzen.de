@@ -123,3 +123,13 @@ Home slide
     border-bottom: var(--accent-color) 2px solid;
     width: fit-content;
 }
+
+.school-title *,
+.work-title * {
+    display: inline;
+    margin: 0;
+}
+
+.school-details {
+    margin-left: 2rem;
+}
