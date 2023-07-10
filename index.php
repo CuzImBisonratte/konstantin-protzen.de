@@ -22,6 +22,17 @@ require_once("no-github.php");
     <link rel="stylesheet" href="/res/css/grid.css">
     <link rel="stylesheet" href="/res/css/slides.css">
     <link rel="stylesheet" href="/res/css/smaller.css">
+    <meta property="og:url" content="https://konstantin-protzen.de/">
+    <meta property="twitter:url" content="https://konstantin-protzen.de/">
+    <meta property="twitter:domain" content="konstantin-protzen.de">
+    <meta property="og:title" content="Konstantin Protzen">
+    <meta name="twitter:title" content="Konstantin Protzen">
+    <meta property="og:description" content="Webdevelopment | UI/UX Design">
+    <meta name="twitter:description" content="Webdevelopment | UI/UX Design">
+    <meta property="og:image" content="https://konstantin-protzen.de/res/img/logo-transparent.png">
+    <meta name="twitter:image" content="https://konstantin-protzen.de/res/img/logo-transparent.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body>
