@@ -118,7 +118,7 @@ Profile
     width: 65%;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    border: 0.25rem solid var(--accent2-color);
+    background-color: var(--background2-color);
 }
 
 .profile-title {
