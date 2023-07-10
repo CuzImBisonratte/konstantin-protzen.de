@@ -21,6 +21,7 @@ require_once("no-github.php");
     <link rel="stylesheet" href="/res/css/theme.css">
     <link rel="stylesheet" href="/res/css/grid.css">
     <link rel="stylesheet" href="/res/css/slides.css">
+    <link rel="stylesheet" href="/res/css/smaller.css">
 </head>
 
 <body>
