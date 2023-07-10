@@ -39,6 +39,15 @@ Category buttons
     color: var(--accent-color);
 }
 
+#mail-button {
+    border-top: 2px solid var(--accent-color);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background: var(--background2-color);
+    color: var(--text-color);
+    transition: 0.5s;
+}
+
 
 /* 
 Arrow buttons
