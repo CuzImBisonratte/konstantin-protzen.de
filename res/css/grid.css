@@ -171,6 +171,7 @@ Slide-side
     background-color: var(--background2-color);
     border-radius: 1.5rem;
     margin: 0.5rem;
+    overflow: auto;
 }
 
 .slide {
