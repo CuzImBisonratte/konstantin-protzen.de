@@ -122,6 +122,23 @@ require_once("no-github.php");
                         </div>
                     </div>
                     <div>
+                        <div class="careerpath-title">
+                            <h1>Career <span class="accent-text">Path</span></h1>
+                        </div>
+                        <div class="careerpath">
+                            <div class="careerpath-school">
+                                <span class="work-title">
+                                    <h3 class="accent-text">Wissler &amp; Protzen</h3> (2022 - <span class="accent-text">Today</span>)
+                                </span>
+                                <ul class="work-details">
+                                    <li>Technical Support</li>
+                                    <li>Property Tax</li>
+                                    <li>Accounting</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
                         <div class="educationpath-title">
                             <h1>School <span class="accent-text">Path</span></h1>
                         </div>
