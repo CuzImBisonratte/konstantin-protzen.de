@@ -25,6 +25,10 @@
         height: calc(100% - 1.25rem);
     }
 
+    .main-slides {
+        height: calc(100vh - 7.5rem);
+    }
+
     .main-arrows {
         flex-direction: column;
     }
@@ -99,5 +103,25 @@
     .slide {
         overflow: auto;
         max-height: calc(100vh - 8rem);
+    }
+
+    .education-skills_table {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "education-core_skills" "education-other_skills";
+    }
+
+    .about_me-top {
+        display: grid;
+        grid-template-columns: auto 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "aboutme-title"
+            "aboutme-text"
+            "aboutme-facts";
+        margin: 1.5rem;
+        padding: 1.5rem;
+        overflow-x: hidden;
     }
 }
