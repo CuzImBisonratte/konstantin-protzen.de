@@ -76,7 +76,7 @@ require_once("no-github.php");
         <div class="main-mainview">
             <div class="main-profile">
                 <div class="profile-image">
-                    <img src="/res/img/logo-transparent.png" alt="Logo">
+                    <img src="/res/img/logo-transparent.webp" alt="Logo">
                 </div>
                 <div class="profile-title">
                     <div>
