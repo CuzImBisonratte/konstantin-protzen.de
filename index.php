@@ -5,7 +5,7 @@ require_once("no-github.php");
 
 ?>
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -34,6 +34,12 @@ require_once("no-github.php");
     <meta name="twitter:image" content="https://konstantin-protzen.de/res/img/logo-transparent.png">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="description" content="Hi, I'm Konstantin Protzen, a free-time full-stack developer and UI/UX designer.">
+    <meta name="keywords" content="Konstantin Protzen, Konstantin, Protzen, Webdevelopment, Webentwicklung, Web, Development, Entwickler, Designer, UI, UX, Design, Full-Stack, Fullstack, Full, Stack, Full-Stack-Developer, Full-Stack-Entwickler, Full-Stack-Design, Deutschland, Germany, DE, DEU, DEU, DACH">
+    <meta name="author" content="Konstantin Protzen">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="notranslate">
     <!-- Icons / Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/res/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/res/img/favicon-32x32.png">
