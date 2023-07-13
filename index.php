@@ -12,7 +12,7 @@ require_once("no-github.php");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Konstantin Protzen</title>
-    <link rel="icon" type="image/x-icon" href="/res/img/favicon.ico" />
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="/res/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="/res/fontawesome/css/brands.min.css">
     <link rel="stylesheet" href="/res/fontawesome/css/solid.min.css">
@@ -22,6 +22,7 @@ require_once("no-github.php");
     <link rel="stylesheet" href="/res/css/grid.css">
     <link rel="stylesheet" href="/res/css/slides.css">
     <link rel="stylesheet" href="/res/css/smaller.css">
+    <!-- OpenGraph tags -->
     <meta property="og:url" content="https://konstantin-protzen.de/">
     <meta property="twitter:url" content="https://konstantin-protzen.de/">
     <meta property="twitter:domain" content="konstantin-protzen.de">
@@ -33,6 +34,19 @@ require_once("no-github.php");
     <meta name="twitter:image" content="https://konstantin-protzen.de/res/img/logo-transparent.png">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
+    <!-- Icons / Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/res/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/res/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="194x194" href="/res/img/favicon-194x194.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/res/img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/res/img/favicon-16x16.png">
+    <link rel="manifest" href="/res/img/site.webmanifest">
+    <link rel="mask-icon" href="/res/img/safari-pinned-tab.svg" color="#eb660e">
+    <link rel="shortcut icon" href="/res/img/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="msapplication-TileImage" content="/res/img/mstile-144x144.png">
+    <meta name="msapplication-config" content="/res/img/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
