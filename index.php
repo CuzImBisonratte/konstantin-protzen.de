@@ -40,9 +40,9 @@ require_once("no-github.php");
     <link rel="icon" type="image/png" sizes="194x194" href="/res/img/favicon-194x194.png">
     <link rel="icon" type="image/png" sizes="192x192" href="/res/img/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/res/img/favicon-16x16.png">
-    <link rel="manifest" href="/res/img/site.webmanifest">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/res/img/safari-pinned-tab.svg" color="#eb660e">
-    <link rel="shortcut icon" href="/res/img/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico">
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="msapplication-TileImage" content="/res/img/mstile-144x144.png">
     <meta name="msapplication-config" content="/res/img/browserconfig.xml">
