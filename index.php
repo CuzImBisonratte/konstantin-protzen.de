@@ -5,7 +5,7 @@ require_once("no-github.php");
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="utf-8">
@@ -34,7 +34,7 @@ require_once("no-github.php");
     <meta name="twitter:image" content="https://konstantin-protzen.de/res/img/logo-transparent.png">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="description" content="Hi, I'm Konstantin Protzen, a free-time full-stack developer and UI/UX designer.">
+    <meta name="description" content="Hi, Ich bin Konstantin Protzen, ein Full-Stack-Webentwickler und UI/UX-Designer.">
     <meta name="keywords" content="Konstantin Protzen, Konstantin, Protzen, Webdevelopment, Webentwicklung, Web, Development, Entwickler, Designer, UI, UX, Design, Full-Stack, Fullstack, Full, Stack, Full-Stack-Developer, Full-Stack-Entwickler, Full-Stack-Design, Deutschland, Germany, DE, DEU, DEU, DACH">
     <meta name="author" content="Konstantin Protzen">
     <meta name="robots" content="index, follow">
@@ -81,7 +81,7 @@ require_once("no-github.php");
                 <div class="profile-title">
                     <div>
                         <h1>Konstantin<br>Protzen</h1>
-                        <p>Webdevelopment | UI/UX Design</p>
+                        <p>Webentwicklung | UI/UX Design</p>
                     </div>
                 </div>
                 <div class="profile-socials">
@@ -95,32 +95,32 @@ require_once("no-github.php");
                 <div class="slide" id="slide-home">
                     <div>
                         <h1>Konstantin Protzen</h1>
-                        <h2>Webdevelopment | UI/UX Design</h2>
+                        <h2>Webentwicklung | UI/UX Design</h2>
                     </div>
                 </div>
                 <div class="slide slide-hide_by_default" id="slide-aboutme">
                     <div class="about_me-top">
                         <div class="aboutme-title">
-                            <h1>About <span class="accent-text">Me</span></h1>
+                            <h1>Über <span class="accent-text">mich</span></h1>
                         </div>
                         <div class="aboutme-text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit animi, dolorum maxime impedit consequatur atque. Molestias blanditiis laboriosam, beatae maxime ducimus earum magni adipisci fugiat.
                         </div>
                         <div class="aboutme-facts">
-                            <span class="accent-text">E-Mail</span><span class="aboutme-fact"><?= CUSTOM_VALUE_EMAIL ?></span><br>
-                            <span class="accent-text">Phone</span><span class="aboutme-fact"><?= CUSTOM_VALUE_PHONE ?></span><br>
-                            <span class="accent-text">Residence</span><span class="aboutme-fact">Germany</span><br>
+                            <span class="accent-text"><i class="fa-solid fa-at"></i></span><span class="aboutme-fact"><?= CUSTOM_VALUE_EMAIL ?></span><br>
+                            <span class="accent-text"><i class="fa-solid fa-phone"></i></span><span class="aboutme-fact"><?= CUSTOM_VALUE_PHONE ?></span><br>
+                            <span class="accent-text"><i class="fa-solid fa-location-pin"></i></span><span class="aboutme-fact">Germany</span><br>
                         </div>
                     </div>
                 </div>
                 <div class="slide slide-hide_by_default" id="slide-education">
                     <div>
                         <div class="education-title">
-                            <h1>My <span class="accent-text">skills</span></h1>
+                            <h1>Mein <span class="accent-text">Lebenslauf</span></h1>
                         </div>
                         <div class="education-skills_table">
                             <div class="education-core_skills">
-                                <h2 class="skills-tablerow-title">Core skills</h2>
+                                <h2 class="skills-tablerow-title">Hauptfähigkeiten</h2>
                                 <div class="skill_list-wrapper">
                                     <p>Javascript</p>
                                     <p>CSS3</p>
@@ -134,7 +134,7 @@ require_once("no-github.php");
                                 </div>
                             </div>
                             <div class="education-other_skills">
-                                <h2 class="skills-tablerow-title">Other skills</h2>
+                                <h2 class="skills-tablerow-title">Sonstige Fähigkeiten</h2>
                                 <div class="skill_list-wrapper">
                                     <p>Wordpress</p>
                                     <p>Unity</p>
@@ -155,42 +155,42 @@ require_once("no-github.php");
                     </div>
                     <div>
                         <div class="careerpath-title">
-                            <h1>Career <span class="accent-text">Path</span></h1>
+                            <h1><span class="accent-text">Karriere</span>weg</h1>
                         </div>
                         <div class="careerpath">
                             <div class="careerpath-school">
                                 <span class="work-title">
-                                    <h3 class="accent-text">Wissler &amp; Protzen</h3> (2022 - <span class="accent-text">Today</span>)
+                                    <h3 class="accent-text">Wissler &amp; Protzen</h3> (Seit 2022)
                                 </span>
                                 <ul class="work-details">
-                                    <li>Technical Support</li>
-                                    <li>Property Tax</li>
-                                    <li>Accounting</li>
+                                    <li>Technische Unterstützung</li>
+                                    <li>Grundsteuer</li>
+                                    <li>Buchhaltung</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div>
                         <div class="educationpath-title">
-                            <h1>School <span class="accent-text">Path</span></h1>
+                            <h1><span class="accent-text">Schul</span>weg</h1>
                         </div>
                         <div class="educationpath">
                             <div class="educationpath-school">
                                 <span class="school-title">
-                                    <h3 class="accent-text">Secondary School</h3> (2017 - 2023)
+                                    <h3 class="accent-text">Weiterf&uuml;hrende Schule</h3> (2017 - 2023)
                                 </span>
                                 <div class="school-details">
                                     <p>Gymnasium Hohenbaden - Altsprachlich Humanistisches Gymnasium</p>
-                                    <p>Baden-Baden, Germany</p>
+                                    <p>Baden-Baden, Deutschland</p>
                                 </div>
                             </div>
                             <div class="educationpath-school">
                                 <span class="school-title">
-                                    <h3 class="accent-text">Primary School</h3> (2013 - 2017)
+                                    <h3 class="accent-text">Grundschule</h3> (2013 - 2017)
                                 </span>
                                 <div class="school-details">
                                     <p>Klosterschule Lichtental</p>
-                                    <p>Lichtental Baden-Baden, Germany</p>
+                                    <p>Lichtental Baden-Baden, Deutschland</p>
                                 </div>
                             </div>
                         </div>
