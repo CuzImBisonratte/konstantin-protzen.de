@@ -183,6 +183,7 @@ require_once("no-github.php");
     <script src="/res/js/slides.js"></script>
     <script src="/res/js/debug.js"></script>
     <script src="/res/js/shuffleskills.js"></script>
+    <script src="/res/js/smaller.js"></script>
 </body>
 
 </html>
