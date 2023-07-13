@@ -45,7 +45,7 @@ require_once("no-github.php");
     <link rel="shortcut icon" href="/favicon.ico">
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="msapplication-TileImage" content="/res/img/mstile-144x144.png">
-    <meta name="msapplication-config" content="/res/img/browserconfig.xml">
+    <meta name="msapplication-config" content="/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 </head>
 
