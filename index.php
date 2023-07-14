@@ -113,14 +113,14 @@ require_once("no-github.php");
                         </div>
                     </div>
                 </div>
-                <div class="slide slide-hide_by_default" id="slide-education">
+                <div class="slide slide-hide_by_default" id="slide-portfolio">
                     <div>
-                        <div class="education-title">
-                            <h1>Mein <span class="accent-text">Lebenslauf</span></h1>
+                        <div class="portfolio-title">
+                            <h1>Meine <span class="accent-text">F&auml;higkeiten</span></h1>
                         </div>
-                        <div class="education-skills_table">
-                            <div class="education-core_skills">
-                                <h2 class="skills-tablerow-title">Hauptfähigkeiten</h2>
+                        <div class="portfolio-skills_table">
+                            <div class="portfolio-core_skills">
+                                <h2 class="skills-tablerow-title">Hauptf&auml;higkeiten</h2>
                                 <div class="skill_list-wrapper">
                                     <p>Javascript</p>
                                     <p>CSS3</p>
@@ -133,8 +133,8 @@ require_once("no-github.php");
                                     <p>MySQL</p>
                                 </div>
                             </div>
-                            <div class="education-other_skills">
-                                <h2 class="skills-tablerow-title">Sonstige Fähigkeiten</h2>
+                            <div class="portfolio-other_skills">
+                                <h2 class="skills-tablerow-title">Sonstige F&auml;higkeiten</h2>
                                 <div class="skill_list-wrapper">
                                     <p>Wordpress</p>
                                     <p>Unity</p>
@@ -153,6 +153,8 @@ require_once("no-github.php");
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="slide slide-hide_by_default" id="slide-education">
                     <div>
                         <div class="careerpath-title">
                             <h1><span class="accent-text">Karriere</span>weg</h1>
