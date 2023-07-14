@@ -197,6 +197,33 @@ require_once("no-github.php");
                             </div>
                         </div>
                     </div>
+                    <div>
+                        <div class="careerpath-title">
+                            <h1>Sonstige <span class="accent-text">T&auml;tigkeiten</span></h1>
+                        </div>
+                        <div class="careerpath">
+                            <div class="careerpath-school">
+                                <span class="work-title">
+                                    <h3 class="accent-text">Mitglied der SMV am Gymnasium Hohenbaden</h3> (Seit 2018)
+                                </span>
+                                <ul class="work-details">
+                                    <li>Protokollf&uuml;hrung</li>
+                                    <li>Aktionsplanung</li>
+                                    <li>Interessensvertretung</li>
+                                    <li>Alltagskoordination</li>
+                                </ul>
+                            </div>
+                            <div class="careerpath-school">
+                                <span class="work-title">
+                                    <h3 class="accent-text">Jugendsprecher Baden-Baden</h3> (Seit 2023)
+                                </span>
+                                <ul class="work-details">
+                                    <li>Protokollf&uuml;hrung</li>
+                                    <li>Politisches Engagment</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
