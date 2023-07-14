@@ -13,6 +13,11 @@ main {
 }
 
 
+a:not(.accent-text) {
+    color: var(--text-color);
+}
+
+
 /* 
 Category buttons
 */
