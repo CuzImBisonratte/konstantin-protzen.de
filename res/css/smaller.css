@@ -106,11 +106,11 @@
         max-height: calc(100dvh - 8rem);
     }
 
-    .education-skills_table {
+    .portfolio-skills_table {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas:
-            "education-core_skills" "education-other_skills";
+            "portfolio-core_skills" "portfolio-other_skills";
     }
 
     .about_me-top {
