@@ -162,7 +162,7 @@ require_once("no-github.php");
                         <div class="careerpath">
                             <div class="careerpath-work">
                                 <span class="work-title">
-                                    <h3 class="accent-text"><a href="https://www.protzen-wissler.de/" class="accent-text">Protzen &amp; Wissler <i class="fa-solid fa-external-link"></i></a></h3> (Seit 2022)
+                                    <h3 class="accent-text"><a href="https://www.protzen-wissler.de/" title="Startseite des Unternehmens Wissler und Protzen" class="accent-text">Wissler &amp; Protzen <i class="fa-solid fa-external-link"></i></a></h3> (Seit 2022)
                                 </span>
                                 <ul class="work-details">
                                     <li>Technische Unterstützung</li>
@@ -183,7 +183,7 @@ require_once("no-github.php");
                                     <h3 class="accent-text">Weiterf&uuml;hrende Schule</h3> (2017 - 2023)
                                 </span>
                                 <div class="school-details">
-                                    <p><a href="https://www.gymnasium-hohenbaden.de/">Gymnasium Hohenbaden <i class="fa-solid fa-external-link"></i></a> - Altsprachlich Humanistisches Gymnasium</p>
+                                    <p><a href="https://www.gymnasium-hohenbaden.de/" title="Startseite des Gymnasium Hohenbaden">Gymnasium Hohenbaden <i class="fa-solid fa-external-link"></i></a> - Altsprachlich Humanistisches Gymnasium</p>
                                     <p>Baden-Baden, Deutschland</p>
                                 </div>
                             </div>
@@ -192,7 +192,7 @@ require_once("no-github.php");
                                     <h3 class="accent-text">Grundschule</h3> (2013 - 2017)
                                 </span>
                                 <div class="school-details">
-                                    <p><a href="https://www.klosterschule-lichtental.de/">Klosterschule Lichtental <i class="fa-solid fa-external-link"></i></a></p>
+                                    <p><a href="https://www.klosterschule-lichtental.de/" title="Startseite der Klosterschule Lichtental">Klosterschule Lichtental <i class="fa-solid fa-external-link"></i></a></p>
                                     <p>Lichtental Baden-Baden, Deutschland</p>
                                 </div>
                             </div>
@@ -205,7 +205,7 @@ require_once("no-github.php");
                         <div class="careerpath">
                             <div class="careerpath-school">
                                 <span class="work-title">
-                                    <h3 class="accent-text"><a href="https://www.gymnasium-hohenbaden.de/index.php/gemeinschaft/schueler-und-smv" class="accent-text">Mitglied der SMV am Gymnasium Hohenbaden <i class="fa-solid fa-external-link"></i></a></h3> (Seit 2018)
+                                    <h3 class="accent-text"><a href="https://www.gymnasium-hohenbaden.de/index.php/gemeinschaft/schueler-und-smv" title="Unterseite des Gymnasium Hohenbadens zur Erklärung der SMV" class="accent-text">Mitglied der SMV am Gymnasium Hohenbaden <i class="fa-solid fa-external-link"></i></a></h3> (Seit 2018)
                                 </span>
                                 <ul class="work-details">
                                     <li>Protokollf&uuml;hrung</li>
@@ -216,7 +216,7 @@ require_once("no-github.php");
                             </div>
                             <div class="careerpath-school">
                                 <span class="work-title">
-                                    <h3 class="accent-text"><a href="https://kijub-baden-baden.de/jugendforum/das-jugendforum/" class="accent-text">Jugendsprecher Baden-Baden <i class="fa-solid fa-external-link"></i></a></h3> (Seit 2023)
+                                    <h3 class="accent-text"><a href="https://kijub-baden-baden.de/jugendforum/das-jugendforum/" title="Übersichtsseite für das Jugendforum Baden-Baden" class="accent-text">Jugendsprecher Baden-Baden <i class="fa-solid fa-external-link"></i></a></h3> (Seit 2023)
                                 </span>
                                 <ul class="work-details">
                                     <li>Protokollf&uuml;hrung</li>
