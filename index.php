@@ -234,6 +234,7 @@ require_once("no-github.php");
     <script src="/res/js/debug.js"></script>
     <script src="/res/js/shuffleskills.js"></script>
     <script src="/res/js/smaller.js"></script>
+    <?php if (isset($_GET['slide'])) echo '<script>switchSlide(' . htmlspecialchars($_GET["slide"]) . ');</script>'; ?>
 </body>
 
 </html>
