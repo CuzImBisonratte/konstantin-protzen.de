@@ -13,6 +13,7 @@ function switchSlide(slide_num) {
     if (slide_num == current_slide) return;
     if (slide_num < 1 || slide_num > slides.length) return;
     document.getElementById('category_opener-'+slides[current_slide - 1].name).style.color = '';
+    window.history.pushState({},"","/?slide="+slide_num);
     hideSlide(current_slide);
     window.setTimeout(() => showSlide(slide_num), 250);
     current_slide = slide_num;
