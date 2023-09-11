@@ -214,7 +214,7 @@ require_once("no-github.php");
                         <div class="careerpath">
                             <div class="careerpath-school">
                                 <span class="work-title">
-                                    <h3 class="accent-text"><a href="https://www.gymnasium-hohenbaden.de/index.php/gemeinschaft/schueler-und-smv" title="Unterseite des Gymnasium Hohenbadens zur Erklärung der SMV" class="accent-text">Mitglied der SMV am Gymnasium Hohenbaden <i class="fa-solid fa-external-link"></i></a></h3> (Seit 2018)
+                                    <h3 class="accent-text"><a href="https://www.gymnasium-hohenbaden.de/index.php/gemeinschaft/schueler-und-smv" title="Unterseite des Gymnasium Hohenbadens zur Erklärung der SMV" class="accent-text">Mitglied der SMV am Gymnasium Hohenbaden <i class="fa-solid fa-external-link"></i></a></h3> (2018 - 2023)
                                 </span>
                                 <ul class="work-details">
                                     <li>Protokollf&uuml;hrung</li>
