@@ -183,7 +183,7 @@ require_once("no-github.php");
                                     <h3 class="accent-text">Weiterf&uuml;hrende Schule</h3> (2023 - 2026)
                                 </span>
                                 <div class="school-details">
-                                    <p><a href="https://www.lls-bad.de/" title="Startseite der Louis Lepoix Schule">Technisches Gymnasium - Louis Lepoix Schule <i class="fa-solid fa-external-link"></i></a> - Altsprachlich Humanistisches Gymnasium</p>
+                                        <p><a href="https://www.lls-bad.de/" title="Startseite der Louis Lepoix Schule">Louis Lepoix Schule <i class="fa-solid fa-external-link"></i></a> - Technisches Gymnasium</p>
                                     <p>Baden-Baden, Deutschland</p>
                                 </div>
                             </div>
