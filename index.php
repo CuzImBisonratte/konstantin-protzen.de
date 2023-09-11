@@ -180,6 +180,15 @@ require_once("no-github.php");
                         <div class="educationpath">
                             <div class="educationpath-school">
                                 <span class="school-title">
+                                    <h3 class="accent-text">Weiterf&uuml;hrende Schule</h3> (2023 - 2026)
+                                </span>
+                                <div class="school-details">
+                                    <p><a href="https://www.lls-bad.de/" title="Startseite der Louis Lepoix Schule">Technisches Gymnasium - Louis Lepoix Schule <i class="fa-solid fa-external-link"></i></a> - Altsprachlich Humanistisches Gymnasium</p>
+                                    <p>Baden-Baden, Deutschland</p>
+                                </div>
+                            </div>
+                            <div class="educationpath-school">
+                                <span class="school-title">
                                     <h3 class="accent-text">Weiterf&uuml;hrende Schule</h3> (2017 - 2023)
                                 </span>
                                 <div class="school-details">
