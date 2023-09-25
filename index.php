@@ -104,7 +104,7 @@ require_once("no-github.php");
                             <h1>Über <span class="accent-text">mich</span></h1>
                         </div>
                         <div class="aboutme-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit animi, dolorum maxime impedit consequatur atque. Molestias blanditiis laboriosam, beatae maxime ducimus earum magni adipisci fugiat.
+                            <?= CUSTOM_VALUE_MOTDS[array_rand(CUSTOM_VALUE_MOTDS)] ?>
                         </div>
                         <div class="aboutme-facts">
                             <span class="accent-text"><i class="fa-solid fa-at"></i></span><span class="aboutme-fact"><?= CUSTOM_VALUE_EMAIL ?></span><br>
@@ -183,7 +183,7 @@ require_once("no-github.php");
                                     <h3 class="accent-text">Weiterf&uuml;hrende Schule</h3> (2023 - 2026)
                                 </span>
                                 <div class="school-details">
-                                        <p><a href="https://www.lls-bad.de/" title="Startseite der Louis Lepoix Schule">Louis Lepoix Schule <i class="fa-solid fa-external-link"></i></a> - Technisches Gymnasium</p>
+                                    <p><a href="https://www.lls-bad.de/" title="Startseite der Louis Lepoix Schule">Louis Lepoix Schule <i class="fa-solid fa-external-link"></i></a> - Technisches Gymnasium</p>
                                     <p>Baden-Baden, Deutschland</p>
                                 </div>
                             </div>
