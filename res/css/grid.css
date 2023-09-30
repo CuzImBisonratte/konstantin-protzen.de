@@ -191,3 +191,14 @@ Slide-side
     display: grid;
     opacity: 1;
 }
+
+/* Copyright note */
+#copyright-notice {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    font-size: 1rem;
+    width: fit-content;
+    height: fit-content;
+    color: var(--background3-color)
+}

@@ -69,6 +69,10 @@
     .slide {
         overflow: scroll;
     }
+
+    #copyright-notice {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 600px) {

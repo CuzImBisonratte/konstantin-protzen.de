@@ -61,6 +61,9 @@ require_once("no-github.php");
             <i class="fas fa-adjust"></i>
         </div>
     </a>
+    <div id="copyright-notice">
+        &copy; 2023 - <span id="current_year"></span>
+    </div>
     <main>
         <div class="main-categories">
             <i onclick="switchSlide(1);" class="fa-solid fa-house" id="category_opener-home" style="color:var(--accent2-color);"></i>
