@@ -104,7 +104,8 @@ require_once("no-github.php");
                             <h1>Über <span class="accent-text">mich</span></h1>
                         </div>
                         <div class="aboutme-text">
-                            <?= CUSTOM_VALUE_MOTDS[array_rand(CUSTOM_VALUE_MOTDS)] ?>
+                            Hallo, ich bin Konstantin. <br>
+                            Ich bin ein <span id="age-field"></span> Jahre alter Full-Stack-Webentwickler und UI/UX-Designer aus Deutschland. Aktuell bin ich noch Schüler.
                         </div>
                         <div class="aboutme-facts">
                             <span class="accent-text"><i class="fa-solid fa-at"></i></span><span class="aboutme-fact"><?= CUSTOM_VALUE_EMAIL ?></span><br>
@@ -243,6 +244,7 @@ require_once("no-github.php");
     <script src="/res/js/debug.js"></script>
     <script src="/res/js/shuffleskills.js"></script>
     <script src="/res/js/smaller.js"></script>
+    <script src="/res/js/year-actions.js"></script>
     <?php if (isset($_GET['slide'])) echo '<script>switchSlide(' . htmlspecialchars($_GET["slide"]) . ');</script>'; ?>
 </body>
 
