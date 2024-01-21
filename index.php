@@ -233,7 +233,7 @@ require_once("no-github.php");
                                 </span>
                                 <ul class="work-details">
                                     <li>Protokollf&uuml;hrung</li>
-                                    <li>Politisches Engagment</li>
+                                    <li>Politisches Engagement</li>
                                 </ul>
                             </div>
                         </div>
