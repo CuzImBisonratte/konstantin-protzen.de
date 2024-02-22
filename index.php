@@ -243,7 +243,8 @@ require_once("no-github.php");
                                     <li>Protokollf&uuml;hrung</li>
                                     <li>Aktionsplanung</li>
                                     <li>Interessensvertretung</li>
-                                    <li>Alltagskoordination</li </ul>
+                                    <li>Alltagskoordination</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
