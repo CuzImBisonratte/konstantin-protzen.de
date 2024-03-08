@@ -156,6 +156,7 @@ require_once("no-github.php");
                                 </div>
                             </div>
                         </div>
+                        <hr class="divider">
                         <div class="portfolio-title" id="portfolio-projects_title">
                             <h1>Meine <span class="accent-text">Projekte</span></h1>
                         </div>
@@ -187,7 +188,7 @@ require_once("no-github.php");
                                 </div>
                                 <img src="/res/img/assets/projects_jufo-bad.png" alt="Noten-App" srcset="" class="portfolio-project-image">
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -210,6 +211,7 @@ require_once("no-github.php");
                             </div>
                         </div>
                     </div>
+                    <hr class="divider">
                     <div>
                         <div class="educationpath-title">
                             <h1><span class="accent-text">Schul</span>weg</h1>
@@ -244,6 +246,7 @@ require_once("no-github.php");
                             </div>
                         </div>
                     </div>
+                    <hr class="divider">
                     <div>
                         <div class="careerpath-title">
                             <h1>Sonstige <span class="accent-text">T&auml;tigkeiten</span></h1>

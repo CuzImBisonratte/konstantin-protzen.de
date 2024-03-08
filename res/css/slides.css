@@ -6,6 +6,11 @@ Slide default parameters
     display: none;
 }
 
+.divider {
+    border: 1px dashed var(--accent-color);
+    margin: 1rem 0;
+}
+
 /* 
 Home slide
 */
