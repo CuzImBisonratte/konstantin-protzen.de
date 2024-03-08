@@ -75,6 +75,14 @@
     }
 }
 
+@media screen and (max-width: 800px) {
+    .portfolio-projects_table {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "portfolio-p1" "portfolio-p2" "portfolio-p3" "portfolio-p4"
+    }
+}
+
 @media screen and (max-width: 600px) {
 
     html,

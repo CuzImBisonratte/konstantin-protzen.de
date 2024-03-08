@@ -156,6 +156,39 @@ require_once("no-github.php");
                                 </div>
                             </div>
                         </div>
+                        <div class="portfolio-title" id="portfolio-projects_title">
+                            <h1>Meine <span class="accent-text">Projekte</span></h1>
+                        </div>
+                        <div class="portfolio-projects_table">
+                            <div class="portfolio-project" id="portfolio-p1" onclick="window.open('https://sharesimple.de', '_blank');">
+                                <div class="portfolio-project-title">
+                                    <div>
+                                        <h2>Sharesimple</h2>
+                                        <p>Share files with your friends at ease</p>
+                                    </div>
+                                </div>
+                                <img src="/res/img/assets/projects_sharesimple.png" alt="Sharesimple" srcset="" class="portfolio-project-image">
+                            </div>
+                            <div class="portfolio-project" id="portfolio-p2" onclick="window.open('https://noten-app.de', '_blank');">
+                                <div class="portfolio-project-title">
+                                    <div>
+                                        <h2>Noten-App</h2>
+                                        <p>Der einzige Schulplaner den du je brauchst!</p>
+                                    </div>
+                                </div>
+                                <img src="/res/img/assets/projects_noten-app.png" alt="Noten-App" srcset="" class="portfolio-project-image">
+                            </div>
+                            <div class="portfolio-project" id="portfolio-p3" onclick="alert('This project is not yet available.');">
+                                <div class="portfolio-project-title">
+                                    <div>
+                                        <h2>Jugendforum</h2>
+                                        <p>Die Website des Jugendforum Baden-Baden!</p>
+                                    </div>
+                                </div>
+                                <img src="/res/img/assets/projects_jufo-bad.png" alt="Noten-App" srcset="" class="portfolio-project-image">
+                            </div>
+                            
+                        </div>
                     </div>
                 </div>
                 <div class="slide slide-hide_by_default" id="slide-education">

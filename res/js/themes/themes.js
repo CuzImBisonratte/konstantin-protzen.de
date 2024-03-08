@@ -5,40 +5,43 @@ const config = {
     standart_dark: "dark",
     standart_light: "light",
     themes: [{
-            name: 'dark',
-            displayName: 'Dunkel',
-            text: '#ffffff',
-            text2: '#cccccc',
-            background: '#282c36',
-            background2: '#080c16',
-            background3: '#0f111a',
-            accent: '#eb660e',
-            accent2: '#f2a900',
-            icon: '<i class="fas fa-adjust"></i>'
-        },
-        {
-            name: 'night',
-            displayName: 'Nacht',
-            text: '#ffffff',
-            text2: '#cccccc',
-            background: '#1b1b1b',
-            background2: '#020409',
-            background3: '#0f111a',
-            accent: '#0078d7',
-            accent2: '#00bcf2',
-            icon: '<i class="fa-solid fa-cloud-moon"></i>'
-        }, {
-            name: 'light',
-            displayName: 'Hell',
-            text: '#000000',
-            text2: '#222222',
-            background: '#d2d2d2',
-            background2: '#ffffff',
-            background3: '#e6e6e6',
-            accent: '#eb660e',
-            accent2: '#f2a900',
-            icon: '<i class="fa-solid fa-sun"></i>'
-        }
+        name: 'dark',
+        displayName: 'Dunkel',
+        text: '#ffffff',
+        text2: '#cccccc',
+        background: '#282c36',
+        background2: '#080c16',
+        background3: '#0f111a',
+        accent: '#eb660e',
+        accent_rgb: '235, 102, 14',
+        accent2: '#f2a900',
+        icon: '<i class="fas fa-adjust"></i>'
+    },
+    {
+        name: 'night',
+        displayName: 'Nacht',
+        text: '#ffffff',
+        text2: '#cccccc',
+        background: '#1b1b1b',
+        background2: '#020409',
+        background3: '#0f111a',
+        accent: '#0078d7',
+        accent_rgb: '0, 120, 215',
+        accent2: '#00bcf2',
+        icon: '<i class="fa-solid fa-cloud-moon"></i>'
+    }, {
+        name: 'light',
+        displayName: 'Hell',
+        text: '#000000',
+        text2: '#222222',
+        background: '#d2d2d2',
+        background2: '#ffffff',
+        background3: '#e6e6e6',
+        accent: '#eb660e',
+        accent_rgb: '235, 102, 14',
+        accent2: '#f2a900',
+        icon: '<i class="fa-solid fa-sun"></i>'
+    }
     ]
 };
 
@@ -49,7 +52,7 @@ function setTheme(set_to_theme) {
         if (theme.name == set_to_theme) {
             Object.keys(theme).forEach((key) => {
                 if (key != 'name' && key != 'displayName' && key != 'icon') {
-                    document.documentElement.style.setProperty('--' + key + '-color', theme[key]);
+                    document.documentElement.style.setProperty('--' + key.replace("_", "-") + '-color', theme[key]);
                 }
             });
             window.setTimeout(() => {
