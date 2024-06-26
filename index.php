@@ -35,7 +35,8 @@ require_once("no-github.php");
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="description" content="Hi, Ich bin Konstantin Protzen, ein Full-Stack-Webentwickler und UI/UX-Designer.">
-    <meta name="keywords" content="Konstantin Protzen, Konstantin, Protzen, Webdevelopment, Webentwicklung, Web, Development, Entwickler, Designer, UI, UX, Design, Full-Stack, Fullstack, Full, Stack, Full-Stack-Developer, Full-Stack-Entwickler, Full-Stack-Design, Deutschland, Germany, DE, DEU, DEU, DACH">
+    <meta name="keywords"
+        content="Konstantin Protzen, Konstantin, Protzen, Webdevelopment, Webentwicklung, Web, Development, Entwickler, Designer, UI, UX, Design, Full-Stack, Fullstack, Full, Stack, Full-Stack-Developer, Full-Stack-Entwickler, Full-Stack-Design, Deutschland, Germany, DE, DEU, DEU, DACH">
     <meta name="author" content="Konstantin Protzen">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
@@ -66,11 +67,13 @@ require_once("no-github.php");
     </div>
     <main>
         <div class="main-categories">
-            <i onclick="switchSlide(1);" class="fa-solid fa-house" id="category_opener-home" style="color:var(--accent2-color);"></i>
+            <i onclick="switchSlide(1);" class="fa-solid fa-house" id="category_opener-home"
+                style="color:var(--accent2-color);"></i>
             <i onclick="switchSlide(2);" class="fa-solid fa-user" id="category_opener-aboutme"></i>
             <i onclick="switchSlide(3);" class="fa-solid fa-bars-progress" id="category_opener-portfolio"></i>
             <i onclick="switchSlide(4);" class="fa-solid fa-graduation-cap" id="category_opener-education"></i>
-            <i id="mail-button" onclick="location.assign('mailto:<?= CUSTOM_VALUE_EMAIL ?>');" class="fa-solid fa-envelope"></i>
+            <i id="mail-button" onclick="location.assign('mailto:<?= CUSTOM_VALUE_EMAIL ?>');"
+                class="fa-solid fa-envelope"></i>
         </div>
         <div class="main-arrows">
             <i onclick="nextSlide();" id="arrow_up" class="fa-solid fa-angle-up arrow_nohover"></i>
@@ -88,10 +91,14 @@ require_once("no-github.php");
                     </div>
                 </div>
                 <div class="profile-socials">
-                    <i onclick="window.open('<?= CUSTOM_VALUE_LINK_GITHUB ?>', '_blank');" class="fa-brands fa-github"></i>
-                    <i onclick="window.open('<?= CUSTOM_VALUE_LINK_MASTODON ?>', '_blank');" class="fa-brands fa-mastodon"></i>
-                    <i onclick="window.open('<?= CUSTOM_VALUE_LINK_DISCORD ?>', '_blank');" class="fa-brands fa-discord"></i>
-                    <i onclick="window.open('<?= CUSTOM_VALUE_LINK_STEAM ?>', '_blank');" class="fa-brands fa-steam"></i>
+                    <i onclick="window.open('<?= CUSTOM_VALUE_LINK_GITHUB ?>', '_blank');"
+                        class="fa-brands fa-github"></i>
+                    <i onclick="window.open('<?= CUSTOM_VALUE_LINK_MASTODON ?>', '_blank');"
+                        class="fa-brands fa-mastodon"></i>
+                    <i onclick="window.open('<?= CUSTOM_VALUE_LINK_DISCORD ?>', '_blank');"
+                        class="fa-brands fa-discord"></i>
+                    <i onclick="window.open('<?= CUSTOM_VALUE_LINK_STEAM ?>', '_blank');"
+                        class="fa-brands fa-steam"></i>
                 </div>
             </div>
             <div class="main-slides">
@@ -108,12 +115,16 @@ require_once("no-github.php");
                         </div>
                         <div class="aboutme-text">
                             Hallo, ich bin Konstantin. <br>
-                            Ich bin ein <span id="age-field"></span> Jahre alter Full-Stack-Webentwickler und UI/UX-Designer aus Deutschland. Aktuell bin ich noch Schüler.
+                            Ich bin ein <span id="age-field"></span> Jahre alter Full-Stack-Webentwickler und
+                            UI/UX-Designer aus Deutschland. Aktuell bin ich noch Schüler.
                         </div>
                         <div class="aboutme-facts">
-                            <span class="accent-text"><i class="fa-solid fa-at"></i></span><span class="aboutme-fact"><?= CUSTOM_VALUE_EMAIL ?></span><br>
-                            <span class="accent-text"><i class="fa-solid fa-phone"></i></span><span class="aboutme-fact"><?= CUSTOM_VALUE_PHONE ?></span><br>
-                            <span class="accent-text"><i class="fa-solid fa-location-pin"></i></span><span class="aboutme-fact">Germany</span><br>
+                            <span class="accent-text"><i class="fa-solid fa-at"></i></span><span
+                                class="aboutme-fact"><?= CUSTOM_VALUE_EMAIL ?></span><br>
+                            <span class="accent-text"><i class="fa-solid fa-phone"></i></span><span
+                                class="aboutme-fact"><?= CUSTOM_VALUE_PHONE ?></span><br>
+                            <span class="accent-text"><i class="fa-solid fa-location-pin"></i></span><span
+                                class="aboutme-fact">Germany</span><br>
                         </div>
                     </div>
                 </div>
@@ -129,12 +140,12 @@ require_once("no-github.php");
                                     <p>Javascript</p>
                                     <p>CSS3</p>
                                     <p>HTML5</p>
+                                    <p>Git</p>
                                     <p>PHP</p>
                                     <p>JQuery</p>
                                     <p>node.js</p>
                                     <p>expressjs</p>
-                                    <p>MariaDB</p>
-                                    <p>MySQL</p>
+                                    <p>SQL</p>
                                 </div>
                             </div>
                             <div class="portfolio-other_skills">
@@ -144,9 +155,9 @@ require_once("no-github.php");
                                     <p>Unity</p>
                                     <p>Joomla!3</p>
                                     <p>Joomla!4</p>
-                                    <p>Git</p>
                                     <p>Blender</p>
                                     <p>Python</p>
+                                    <p>MariaDB</p>
                                     <p>Grafana</p>
                                     <p>Bootstrap</p>
                                     <p>Chart.js</p>
@@ -161,32 +172,38 @@ require_once("no-github.php");
                             <h1>Meine <span class="accent-text">Projekte</span></h1>
                         </div>
                         <div class="portfolio-projects_table">
-                            <div class="portfolio-project" id="portfolio-p1" onclick="window.open('https://sharesimple.de', '_blank');">
+                            <div class="portfolio-project" id="portfolio-p1"
+                                onclick="window.open('https://sharesimple.de', '_blank');">
                                 <div class="portfolio-project-title">
                                     <div>
                                         <h2>Sharesimple</h2>
                                         <p>Share files with your friends at ease</p>
                                     </div>
                                 </div>
-                                <img src="/res/img/assets/projects_sharesimple.png" alt="Sharesimple" srcset="" class="portfolio-project-image">
+                                <img src="/res/img/assets/projects_sharesimple.png" alt="Sharesimple" srcset=""
+                                    class="portfolio-project-image">
                             </div>
-                            <div class="portfolio-project" id="portfolio-p2" onclick="window.open('https://noten-app.de', '_blank');">
+                            <div class="portfolio-project" id="portfolio-p2"
+                                onclick="window.open('https://noten-app.de', '_blank');">
                                 <div class="portfolio-project-title">
                                     <div>
                                         <h2>Noten-App</h2>
                                         <p>Der einzige Schulplaner den du je brauchst!</p>
                                     </div>
                                 </div>
-                                <img src="/res/img/assets/projects_noten-app.png" alt="Noten-App" srcset="" class="portfolio-project-image">
+                                <img src="/res/img/assets/projects_noten-app.png" alt="Noten-App" srcset=""
+                                    class="portfolio-project-image">
                             </div>
-                            <div class="portfolio-project" id="portfolio-p3" onclick="alert('This project is not yet available.');">
+                            <div class="portfolio-project" id="portfolio-p3"
+                                onclick="alert('This project is not yet available.');">
                                 <div class="portfolio-project-title">
                                     <div>
                                         <h2>Jugendforum</h2>
                                         <p>Die Website des Jugendforum Baden-Baden!</p>
                                     </div>
                                 </div>
-                                <img src="/res/img/assets/projects_jufo-bad.png" alt="Noten-App" srcset="" class="portfolio-project-image">
+                                <img src="/res/img/assets/projects_jufo-bad.png" alt="Noten-App" srcset=""
+                                    class="portfolio-project-image">
                             </div>
 
                         </div>
@@ -200,7 +217,10 @@ require_once("no-github.php");
                         <div class="careerpath">
                             <div class="careerpath-work">
                                 <span class="work-title">
-                                    <h3 class="accent-text"><a href="https://www.protzen-wissler.de/" title="Startseite des Unternehmens Wissler und Protzen" class="accent-text">Wissler &amp; Protzen <i class="fa-solid fa-external-link"></i></a></h3> (Seit 2022)
+                                    <h3 class="accent-text"><a href="https://www.protzen-wissler.de/"
+                                            title="Startseite des Unternehmens Wissler und Protzen"
+                                            class="accent-text">Wissler &amp; Protzen <i
+                                                class="fa-solid fa-external-link"></i></a></h3> (Seit 2022)
                                 </span>
                                 <ul class="work-details">
                                     <li>Technische Unterstützung</li>
@@ -222,7 +242,9 @@ require_once("no-github.php");
                                     <h3 class="accent-text">Weiterf&uuml;hrende Schule</h3> (Seit 2023)
                                 </span>
                                 <div class="school-details">
-                                    <p><a href="https://www.lls-bad.de/" title="Startseite der Louis Lepoix Schule">Louis Lepoix Schule <i class="fa-solid fa-external-link"></i></a> - Technisches Gymnasium</p>
+                                    <p><a href="https://www.lls-bad.de/"
+                                            title="Startseite der Louis Lepoix Schule">Louis Lepoix Schule <i
+                                                class="fa-solid fa-external-link"></i></a> - Technisches Gymnasium</p>
                                     <p>Baden-Baden, Deutschland</p>
                                 </div>
                             </div>
@@ -231,7 +253,10 @@ require_once("no-github.php");
                                     <h3 class="accent-text">Weiterf&uuml;hrende Schule</h3> (2017 - 2023)
                                 </span>
                                 <div class="school-details">
-                                    <p><a href="https://www.gymnasium-hohenbaden.de/" title="Startseite des Gymnasium Hohenbaden">Gymnasium Hohenbaden <i class="fa-solid fa-external-link"></i></a> - Altsprachlich Humanistisches Gymnasium</p>
+                                    <p><a href="https://www.gymnasium-hohenbaden.de/"
+                                            title="Startseite des Gymnasium Hohenbaden">Gymnasium Hohenbaden <i
+                                                class="fa-solid fa-external-link"></i></a> - Altsprachlich
+                                        Humanistisches Gymnasium</p>
                                     <p>Baden-Baden, Deutschland</p>
                                 </div>
                             </div>
@@ -240,7 +265,9 @@ require_once("no-github.php");
                                     <h3 class="accent-text">Grundschule</h3> (2013 - 2017)
                                 </span>
                                 <div class="school-details">
-                                    <p><a href="https://www.klosterschule-lichtental.de/" title="Startseite der Klosterschule Lichtental">Klosterschule Lichtental <i class="fa-solid fa-external-link"></i></a></p>
+                                    <p><a href="https://www.klosterschule-lichtental.de/"
+                                            title="Startseite der Klosterschule Lichtental">Klosterschule Lichtental <i
+                                                class="fa-solid fa-external-link"></i></a></p>
                                     <p>Lichtental Baden-Baden, Deutschland</p>
                                 </div>
                             </div>
@@ -254,7 +281,10 @@ require_once("no-github.php");
                         <div class="careerpath">
                             <div class="careerpath-school">
                                 <span class="work-title">
-                                    <h3 class="accent-text"><a href="https://www.lls-bad.de/" title="Homepage der Louis-Lepoix-Schule" class="accent-text">Mitglied der SMV an der Louis-Lepoix-Schule <i class="fa-solid fa-external-link"></i></a></h3> (Seit 2023)
+                                    <h3 class="accent-text"><a href="https://www.lls-bad.de/"
+                                            title="Homepage der Louis-Lepoix-Schule" class="accent-text">Mitglied der
+                                            SMV an der Louis-Lepoix-Schule <i class="fa-solid fa-external-link"></i></a>
+                                    </h3> (Seit 2023)
                                 </span>
                                 <ul class="work-details">
                                     <li>Protokollf&uuml;hrung</li>
@@ -264,7 +294,11 @@ require_once("no-github.php");
                             </div>
                             <div class="careerpath-school">
                                 <span class="work-title">
-                                    <h3 class="accent-text"><a href="https://kijub-baden-baden.de/jugendforum/das-jugendforum/" title="Übersichtsseite für das Jugendforum Baden-Baden" class="accent-text">Jugendsprecher Baden-Baden <i class="fa-solid fa-external-link"></i></a></h3> (Seit 2023)
+                                    <h3 class="accent-text"><a
+                                            href="https://kijub-baden-baden.de/jugendforum/das-jugendforum/"
+                                            title="Übersichtsseite für das Jugendforum Baden-Baden"
+                                            class="accent-text">Jugendsprecher Baden-Baden <i
+                                                class="fa-solid fa-external-link"></i></a></h3> (Wahlperiode 2023/2024)
                                 </span>
                                 <ul class="work-details">
                                     <li>Protokollf&uuml;hrung</li>
@@ -273,7 +307,11 @@ require_once("no-github.php");
                             </div>
                             <div class="careerpath-school">
                                 <span class="work-title">
-                                    <h3 class="accent-text"><a href="https://www.gymnasium-hohenbaden.de/index.php/gemeinschaft/schueler-und-smv" title="Unterseite des Gymnasium Hohenbadens zur Erklärung der SMV" class="accent-text">Mitglied der SMV am Gymnasium Hohenbaden <i class="fa-solid fa-external-link"></i></a></h3> (2018 - 2023)
+                                    <h3 class="accent-text"><a
+                                            href="https://www.gymnasium-hohenbaden.de/index.php/gemeinschaft/schueler-und-smv"
+                                            title="Unterseite des Gymnasium Hohenbadens zur Erklärung der SMV"
+                                            class="accent-text">Mitglied der SMV am Gymnasium Hohenbaden <i
+                                                class="fa-solid fa-external-link"></i></a></h3> (2018 - 2023)
                                 </span>
                                 <ul class="work-details">
                                     <li>Protokollf&uuml;hrung</li>
