@@ -198,11 +198,13 @@ require_once("no-github.php");
                                 onclick="alert('This project is not yet available.');">
                                 <div class="portfolio-project-title">
                                     <div>
-                                        <h2>Jugendforum</h2>
-                                        <p>Die Website des Jugendforum Baden-Baden!</p>
+                                        <h2>Wissler & Protzen</h2>
+                                        <p>
+                                            Kanzlei Wissler & Protzen - Homepage
+                                        </p>
                                     </div>
                                 </div>
-                                <img src="/res/img/assets/projects_jufo-bad.png" alt="Noten-App" srcset=""
+                                <img src="/res/img/assets/projects_wup.png" alt="Wissler&Protzen" srcset=""
                                     class="portfolio-project-image">
                             </div>
 
