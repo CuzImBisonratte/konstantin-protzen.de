@@ -297,8 +297,8 @@ require_once("no-github.php");
                             <div class="careerpath-school">
                                 <span class="work-title">
                                     <h3 class="accent-text"><a
-                                            href="https://kijub-baden-baden.de/jugendforum/das-jugendforum/"
-                                            title="Übersichtsseite für das Jugendforum Baden-Baden"
+                                            href="https://web.archive.org/web/20231114121040/https://kijub-baden-baden.de/jugendforum/das-jugendforum/#expand"
+                                            title="Übersichtsseite für das Jugendforum Baden-Baden zur Zeit meiner Wahlperiode"
                                             class="accent-text">Jugendsprecher Baden-Baden <i
                                                 class="fa-solid fa-external-link"></i></a></h3> (Wahlperiode 2023/2024)
                                 </span>
