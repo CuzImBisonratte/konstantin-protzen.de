@@ -289,9 +289,11 @@ require_once("no-github.php");
                                     </h3> (Seit 2023)
                                 </span>
                                 <ul class="work-details">
-                                    <li>Protokollf&uuml;hrung</li>
-                                    <li>Aktionsplanung</li>
+                                    <li>Mitglied der Schulkonferenz</li>
                                     <li>Interessensvertretung</li>
+                                    <li>Protokollf&uuml;hrung</li>
+                                    <li>Klassensprecher</li>
+                                    <li>Aktionsplanung</li>
                                 </ul>
                             </div>
                             <div class="careerpath-school">
@@ -303,8 +305,8 @@ require_once("no-github.php");
                                                 class="fa-solid fa-external-link"></i></a></h3> (Wahlperiode 2023/2024)
                                 </span>
                                 <ul class="work-details">
-                                    <li>Protokollf&uuml;hrung</li>
                                     <li>Politisches Engagement</li>
+                                    <li>Protokollf&uuml;hrung</li>
                                 </ul>
                             </div>
                             <div class="careerpath-school">
@@ -316,10 +318,10 @@ require_once("no-github.php");
                                                 class="fa-solid fa-external-link"></i></a></h3> (2018 - 2023)
                                 </span>
                                 <ul class="work-details">
-                                    <li>Protokollf&uuml;hrung</li>
-                                    <li>Aktionsplanung</li>
                                     <li>Interessensvertretung</li>
                                     <li>Alltagskoordination</li>
+                                    <li>Protokollf&uuml;hrung</li>
+                                    <li>Aktionsplanung</li>
                                 </ul>
                             </div>
                         </div>
