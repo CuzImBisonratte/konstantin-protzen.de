@@ -1,4 +1,0 @@
-User-Agent: *
-Allow: /
-
-Sitemap: https://konstantin-protzen.de/sitemap.xml
