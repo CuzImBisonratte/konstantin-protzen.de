@@ -1,0 +1,33 @@
+:root {
+    --text-color: #ffffff;
+    --text2-color: #cccccc;
+    --background-color: #282c36;
+    --background2-color: #181c26;
+    --background3-color: #0f111a;
+    --accent-color: #eb670e;
+}
+
+html,
+body {
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0rem;
+    width: 100%;
+    height: 100%;
+    transition: 0;
+    font-size: 100%;
+    font-family: "Ubuntu";
+    scroll-behavior: smooth;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: 0.5s;
+    user-select: none;
+}

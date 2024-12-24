@@ -1,0 +1,74 @@
+.lockscreen {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: grab;
+    transition: 0s;
+}
+
+#lockscreen_background {
+    background-color: var(--accent-color);
+    background-image: url("/res/img/lock.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: blur(10px);
+    scale: 1.1;
+}
+
+.lockscreen_content {
+    padding: 20vh 5vw;
+    height: 100%;
+    position: relative;
+}
+
+#lockscreen_time {
+    position: relative;
+    text-align: center;
+    font-size: 7.5vh;
+    font-weight: 500;
+    letter-spacing: 0.125rem;
+}
+
+#lockscreen_date {
+    position: relative;
+    text-align: center;
+    font-size: 2.5vh;
+    font-weight: 400;
+    letter-spacing: 0.125rem;
+    margin-top: 0.5rem;
+}
+
+#lockscreen_note {
+    position: absolute;
+    text-align: center;
+    bottom: 10vh;
+    left: 0;
+    right: 0;
+}
+
+/* 
+Animations
+*/
+
+.unlock {
+    animation: unlock 1s forwards;
+    cursor: none !important;
+}
+
+@keyframes unlock {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, -100%);
+    }
+}
