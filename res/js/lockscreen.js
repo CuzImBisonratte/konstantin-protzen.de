@@ -3,48 +3,91 @@ var lockscreen = document.getElementById("lockscreen");
 
 // Functions controlling the lockscreen state
 
-function lockscreen_unlock() {
+function lockscreen_lock() {
     if (locked) return;
     locked = true;
-    lockscreen.classList.remove("unlock");
+    lockscreen.style.transition = "transform 0.5s";
+    lockscreen.style.transform = "translateY(0)";
+    window.setTimeout(function () {
+        lockscreen.style.transition = "transform 0s";
+    }, 500);
 }
 
 function lockscreen_unlock() {
     if (!locked) return;
     locked = false;
-    lockscreen.classList.add("unlock");
+    lockscreen.style.transition = "transform 0.5s";
+    lockscreen.style.transform = "translateY(-100%)";
+    window.setTimeout(function () {
+        lockscreen.style.transition = "transform 0s";
+    }, 500);
 }
 
 document.addEventListener("keydown", function (event) {
     if (event.key == " ") lockscreen_unlock();
+    if (event.altKey && event.key.toLowerCase() == "l") {
+        event.preventDefault();
+        lockscreen_lock();
+    }
 });
 
 // Lockscreen swipe
 var downY = 0, currentY = 0, down = false, distUp = 0;
 document.addEventListener("mousedown", function (event) {
+    if (!locked) return;
     downY = event.clientY;
     down = true;
+    lockscreen.style.cursor = "grabbing";
+    lockscreen.style.transition = "transform 0s";
 });
 document.addEventListener("mousemove", function (event) {
+    if (!locked) return;
     if (!down) return;
     currentY = event.clientY;
     distUp = downY - currentY;
-    if (distUp < 0) return;
+    if (distUp < 0) distUp = 0;
     lockscreen.style.transform = "translateY(-" + (distUp) + "px)";
-    console.log(currentY - downY);
 });
 document.addEventListener("mouseup", function (event) {
+    if (!locked) return;
     down = false;
     downY = 0;
     currentY = 0;
+    lockscreen.style.cursor = "grab";
+    lockscreen.style.transition = "transform 0.5s";
     if (distUp < window.innerHeight / 2) {
         lockscreen.style.transform = "translateY(0)";
     } else {
-        lockscreen.style.transform = "translateY(-100%)";
-        window.setTimeout(function () {
-            lockscreen.style.display = "none";
-            lockscreen_unlock();
-        }, 1000);
+        lockscreen_unlock();
+    }
+});
+// Touch events for lockscreen swipe
+document.addEventListener("touchstart", function (event) {
+    if (!locked) return;
+    downY = event.touches[0].clientY;
+    down = true;
+    lockscreen.style.cursor = "grabbing";
+    lockscreen.style.transition = "transform 0s";
+});
+document.addEventListener("touchmove", function (event) {
+    if (!locked) return;
+    if (!down) return;
+    currentY = event.touches[0].clientY;
+    distUp = downY - currentY;
+    if (distUp < 0) distUp = 0;
+    lockscreen.style.transform = "translateY(-" + (distUp) + "px)";
+});
+document.addEventListener("touchend", function (event) {
+    if (!locked) return;
+    down = false;
+    downY = 0;
+    currentY = 0;
+    lockscreen.style.cursor = "grab";
+    lockscreen.style.transition = "transform 0.5s";
+    if (distUp < window.innerHeight / 2) {
+        lockscreen.style.transform = "translateY(0)";
+    } else {
+        lockscreen_unlock();
     }
 });
 

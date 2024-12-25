@@ -1,7 +1,7 @@
 .lockscreen {
     overflow: hidden;
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     position: absolute;
     top: 0;
     left: 0;
@@ -15,12 +15,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     position: absolute;
     top: 0;
     left: 0;
-    filter: blur(10px);
+    filter: blur(10px) brightness(0.9);
     scale: 1.1;
+    overflow: hidden;
 }
 
 .lockscreen_content {
@@ -49,26 +50,7 @@
 #lockscreen_note {
     position: absolute;
     text-align: center;
-    bottom: 10vh;
+    bottom: 10dvh;
     left: 0;
     right: 0;
-}
-
-/* 
-Animations
-*/
-
-.unlock {
-    animation: unlock 1s forwards;
-    cursor: none !important;
-}
-
-@keyframes unlock {
-    0% {
-        transform: translate(0, 0);
-    }
-
-    100% {
-        transform: translate(0, -100%);
-    }
 }
