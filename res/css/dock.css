@@ -82,6 +82,7 @@ main {
     text-align: center;
     padding-right: 0.5rem;
     transform: translate(0, -0.1rem);
+    cursor: pointer;
 }
 
 .dock-time {
