@@ -11,10 +11,14 @@ main {
     width: 100dvw;
     position: fixed;
     inset: 0px;
+    /**
+    * @TODO This background stuff needs to be moved from dock.css somewhere more useful
+    */
     background-color: var(--accent-color);
-    background-image: url("/res/img/lock.webp");
+    background-image: url("/res/img/wall.webp");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center top;
 }
 
 .desktop {
