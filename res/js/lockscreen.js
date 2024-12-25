@@ -103,6 +103,7 @@ function update_lockTime() {
     // Time
     var hours = date.getHours();
     var minutes = date.getMinutes();
+    hours = hours < 10 ? "0" + hours : hours;
     minutes = minutes < 10 ? "0" + minutes : minutes;
     document.getElementById("lockscreen_time").innerHTML = hours + ":" + minutes;
     // Date

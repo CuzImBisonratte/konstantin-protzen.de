@@ -5,6 +5,7 @@ function update_lockTime() {
     var hours = date.getHours();
     var minutes = date.getMinutes();
     var seconds = date.getSeconds();
+    hours = hours < 10 ? "0" + hours : hours;
     minutes = minutes < 10 ? "0" + minutes : minutes;
     seconds = seconds < 10 ? "0" + seconds : seconds;
     document.getElementById("dock-time").innerHTML = hours + ":" + minutes + ":" + seconds;
@@ -12,6 +13,8 @@ function update_lockTime() {
     var dom = date.getDate();
     var month = date.getMonth() + 1;
     var year = date.getFullYear();
+    dom = dom < 10 ? "0" + dom : dom;
+    month = month < 10 ? "0" + month : month;
     document.getElementById("dock-date").innerHTML = dom + "." + month + "." + year;
 }
 
