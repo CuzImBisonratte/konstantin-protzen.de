@@ -91,6 +91,11 @@ document.addEventListener("touchend", function (event) {
     }
 });
 
+// Check if device is touch capable
+if ("ontouchstart" in window) {
+    document.getElementById("lockscreen_note").innerHTML = "Zum Entsperren nach oben ziehen";
+}
+
 // Time updater
 
 function update_lockTime() {
