@@ -54,6 +54,13 @@ main {
     grid-area: dock-seperator;
 }
 
+.dock-seperator-line {
+    width: 1px;
+    height: 40px;
+    margin: 5px;
+    background-color: #fff;
+}
+
 .dock-shortcuts {
     grid-area: dock-shortcuts;
 }
