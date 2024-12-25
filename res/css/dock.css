@@ -29,7 +29,7 @@ main {
     grid-area: dock;
     background-color: rgba(40, 44, 54, 0.9);
     display: grid;
-    padding-left: 0.25rem;
+    padding: 0 0.25rem;
     grid-template-columns: 50px 10px 1fr min-content;
     grid-template-rows: 1fr;
     gap: 0px 0px;
@@ -71,4 +71,29 @@ main {
 
 .dock-right {
     grid-area: dock-right;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "dock-time"
+        "dock-date";
+    font-weight: 400;
+    text-align: center;
+    padding-right: 0.5rem;
+    transform: translate(0, -0.1rem);
+}
+
+.dock-time {
+    grid-area: dock-time;
+    text-align: center;
+    transform: translate(0, 0.4rem);
+    font-size: 0.95rem;
+}
+
+.dock-date {
+    grid-area: dock-date;
+    font-size: 0.75rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 0.25rem;
 }
