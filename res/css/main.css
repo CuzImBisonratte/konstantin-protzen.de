@@ -28,6 +28,5 @@ body {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    transition: 0.5s;
     user-select: none;
 }
