@@ -7,6 +7,7 @@
     left: 0;
     cursor: grab;
     transition: 0s;
+    z-index: 1000;
 }
 
 #lockscreen_background {
@@ -28,6 +29,7 @@
     padding: 20vh 5vw;
     height: 100%;
     position: relative;
+    z-index: 1001;
 }
 
 #lockscreen_time {
