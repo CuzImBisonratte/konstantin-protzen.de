@@ -111,3 +111,6 @@ function update_lockTime() {
 
 setInterval(update_lockTime, 1000);
 update_lockTime();
+
+// Check for default unlock
+if (new URLSearchParams(window.location.search).get("unlocked") != null) lockscreen_unlock();
