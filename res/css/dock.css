@@ -1,0 +1,63 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 50px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "desktop"
+        "dock";
+    height: 100dvh;
+    width: 100dvw;
+    position: fixed;
+    inset: 0px;
+    background-color: var(--accent-color);
+    background-image: url("/res/img/lock.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.desktop {
+    grid-area: desktop;
+}
+
+.dock {
+    grid-area: dock;
+    background-color: rgba(40, 44, 54, 0.9);
+    display: grid;
+    padding-left: 0.25rem;
+    grid-template-columns: 50px 10px 1fr min-content;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "dock-home dock-seperator dock-shortcuts dock-right";
+}
+
+.dock-home {
+    grid-area: dock-home;
+    cursor: pointer;
+    fill: #fff;
+    transition: 0.1s;
+}
+
+.dock-home:hover {
+    fill: var(--accent-color);
+    scale: 1.1;
+}
+
+.dock-home-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.dock-seperator {
+    grid-area: dock-seperator;
+}
+
+.dock-shortcuts {
+    grid-area: dock-shortcuts;
+}
+
+.dock-right {
+    grid-area: dock-right;
+}
