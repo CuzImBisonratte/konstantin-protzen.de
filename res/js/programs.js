@@ -25,7 +25,7 @@ function spawnProgram(windowId, program) {
                 <div class="window_controls-resize">
                     <img src="/res/modules/yaru/icons/Yaru/scalable/ui/window-restore-symbolic.svg" alt="" srcset="" />
                 </div>
-                <div class="window_controls-close">
+                <div class="window_controls-close" onclick="activeWindows['${windowId}'].destroy()">
                     <img src="/res/modules/yaru/icons/Yaru/scalable/ui/window-close-symbolic.svg" alt="" srcset="" />
                 </div>
             </div>

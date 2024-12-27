@@ -17,7 +17,15 @@ class window_obj {
         updateDockShortcuts();
     }
     destroy() {
-        activeWindows.splice(activeWindows.indexOf(this), 1);
+        delete activeWindows[this.id];
+        document.getElementById(this.id).remove();
+        updateDockShortcuts();
+        Object.values(activeWindows).forEach(e => {
+            if (e.index > this.index) {
+                e.index--;
+            }
+        });
+        updateWindowHeights();
     }
 }
 
