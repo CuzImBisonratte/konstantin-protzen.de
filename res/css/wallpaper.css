@@ -1,0 +1,7 @@
+main {
+    background-color: #000000;
+    background-image: url("/res/img/wall.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
