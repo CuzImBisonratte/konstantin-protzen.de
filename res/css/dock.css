@@ -59,6 +59,28 @@ main {
 
 .dock-shortcuts {
     grid-area: dock-shortcuts;
+    display: flex;
+    height: var(--dock-size);
+}
+
+.dock-shortcut {
+    margin: calc(var(--dock-size) * 0.1);
+    margin-right: 0;
+    border-radius: 0.5rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    transition: 0.05s transform;
+}
+
+.dock-shortcut:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.dock-shortcut img {
+    height: 100%;
 }
 
 .dock-right {

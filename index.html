@@ -21,52 +21,7 @@
 			</div>
 		</div>
 		<main id="main">
-			<div class="desktop">
-				<div class="window window-windowed" style="width: 400px; height: 400px; top: 50px; left: 40px; z-index: 100">
-					<div class="window_head">
-						<div class="window_title" id="window_title">
-							<div class="window_title-icon">
-								<img src="/res/modules/yaru/icons/Yaru/256x256/apps/htop.png" alt="" srcset="" />
-							</div>
-							<div class="window_title-name">Tasks</div>
-						</div>
-						<div class="window_controls">
-							<div class="window_controls-minimize">
-								<img src="/res/modules/yaru/icons/Yaru/scalable/ui/window-minimize-symbolic.svg" alt="" srcset="" />
-							</div>
-							<div class="window_controls-resize">
-								<img src="/res/modules/yaru/icons/Yaru/scalable/ui/window-restore-symbolic.svg" alt="" srcset="" />
-							</div>
-							<div class="window_controls-close">
-								<img src="/res/modules/yaru/icons/Yaru/scalable/ui/window-close-symbolic.svg" alt="" srcset="" />
-							</div>
-						</div>
-					</div>
-					<div class="window_body"></div>
-				</div>
-				<div class="window window-windowed" style="width: 500px; height: 300px; top: 280px; left: 350px; z-index: 110">
-					<div class="window_head">
-						<div class="window_title" id="window_title">
-							<div class="window_title-icon">
-								<img src="/res/modules/yaru/icons/Yaru/256x256/apps/htop.png" alt="" srcset="" />
-							</div>
-							<div class="window_title-name">Tasks</div>
-						</div>
-						<div class="window_controls">
-							<div class="window_controls-minimize">
-								<img src="/res/modules/yaru/icons/Yaru/scalable/ui/window-minimize-symbolic.svg" alt="" srcset="" />
-							</div>
-							<div class="window_controls-resize">
-								<img src="/res/modules/yaru/icons/Yaru/scalable/ui/window-restore-symbolic.svg" alt="" srcset="" />
-							</div>
-							<div class="window_controls-close">
-								<img src="/res/modules/yaru/icons/Yaru/scalable/ui/window-close-symbolic.svg" alt="" srcset="" />
-							</div>
-						</div>
-					</div>
-					<div class="window_body"></div>
-				</div>
-			</div>
+			<div class="desktop" id="desktop"></div>
 			<div class="dock" id="dock">
 				<div class="dock-home">
 					<!-- This has to be in here and can't be loaded through an image tag so css fill works :c -->
@@ -78,10 +33,10 @@
 				<div class="dock-seperator">
 					<div class="dock-seperator-line"></div>
 				</div>
-				<div class="dock-shortcuts"></div>
+				<div class="dock-shortcuts" id="dock-shortcuts"></div>
 				<div class="dock-right">
-					<div class="dock-time" id="dock-time">12:34:56</div>
-					<div class="dock-date" id="dock-date">24.12.2024</div>
+					<div class="dock-time" id="dock-time"></div>
+					<div class="dock-date" id="dock-date"></div>
 				</div>
 			</div>
 		</main>
@@ -89,4 +44,6 @@
 	<script src="/res/js/lockscreen.js"></script>
 	<script src="/res/js/dock.js"></script>
 	<script src="/res/js/debug.js"></script>
+	<script src="/res/js/programs.js"></script>
+	<script src="/res/js/desktop.js"></script>
 </html>
