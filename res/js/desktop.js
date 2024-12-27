@@ -11,7 +11,7 @@ class window_obj {
         this.icon = parameters.icon;
         this.type = parameters.type;
         this.id = Math.random().toString(36).substring(7);
-        this.index = activeWindows.length;
+        this.index = Object.keys(activeWindows).length;
         activeWindows[this.id] = this;
         spawnProgram(this.id, this.type);
         updateDockShortcuts();
@@ -26,9 +26,21 @@ window.setTimeout(() => { new window_obj({ title: "Terminal", icon: "/res/module
 window.setTimeout(() => { new window_obj({ title: "Settings", icon: "/res/modules/yaru/icons/Yaru/256x256/apps/preferences-system.png", type: "settings" }); }, 3000);
 
 function updateWindowHeights() {
-    activeWindows.forEach(e => {
+    Object.values(activeWindows).forEach(e => {
         document.getElementById(e.id).style.zIndex = 100 + e.index * 10;
     });
 }
 
 updateDockShortcuts();
+
+function moveWindowUp(window_id) {
+    let window = activeWindows[window_id];
+    let maxIndex = Object.keys(activeWindows).length - 1;
+    Object.values(activeWindows).forEach(e => {
+        if (e.index > window.index) {
+            e.index--;
+        }
+    });
+    window.index = maxIndex;
+    updateWindowHeights();
+}
