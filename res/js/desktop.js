@@ -31,8 +31,6 @@ function updateWindowHeights() {
     });
 }
 
-updateDockShortcuts();
-
 function moveWindowUp(window_id) {
     let window = activeWindows[window_id];
     let maxIndex = Object.keys(activeWindows).length - 1;
@@ -44,3 +42,4 @@ function moveWindowUp(window_id) {
     window.index = maxIndex;
     updateWindowHeights();
 }
+
