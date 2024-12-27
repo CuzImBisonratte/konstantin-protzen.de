@@ -1,7 +1,7 @@
 main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 50px;
+    grid-template-rows: 1fr var(--dock-size);
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -21,8 +21,8 @@ main {
     grid-area: dock;
     background-color: rgba(40, 44, 54, 0.9);
     display: grid;
-    padding: 0 0.25rem;
-    grid-template-columns: 50px 10px 1fr min-content;
+    padding: 0 calc(var(--dock-size) * 0.15);
+    grid-template-columns: var(--dock-size) 10px 1fr min-content;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-template-areas:
@@ -42,8 +42,8 @@ main {
 }
 
 .dock-home-logo {
-    width: 50px;
-    height: 50px;
+    width: var(--dock-size);
+    height: var(--dock-size);
 }
 
 .dock-seperator {
@@ -52,8 +52,8 @@ main {
 
 .dock-seperator-line {
     width: 1px;
-    height: 40px;
-    margin: 5px;
+    height: calc(var(--dock-size) * 0.8);
+    margin: calc(var(--dock-size) * 0.1);
     background-color: #fff;
 }
 
@@ -72,7 +72,7 @@ main {
         "dock-date";
     font-weight: 400;
     text-align: center;
-    padding-right: 0.5rem;
+    padding-right: calc(var(--dock-size) * 0.15);
     transform: translate(0, -0.1rem);
     cursor: pointer;
 }
@@ -80,13 +80,13 @@ main {
 .dock-time {
     grid-area: dock-time;
     text-align: center;
-    transform: translate(0, 0.4rem);
-    font-size: 0.95rem;
+    transform: translate(0, calc(var(--dock-size) * 0.15));
+    font-size: calc(var(--dock-size)*0.3);
 }
 
 .dock-date {
     grid-area: dock-date;
-    font-size: 0.75rem;
+    font-size: calc(var(--dock-size) * 0.25);
     border-top: 1px solid rgba(255, 255, 255, 0.3);
-    padding-top: 0.25rem;
+    padding-top: calc(var(--dock-size) * 0.05);
 }
