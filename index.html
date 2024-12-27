@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="/res/css/lockscreen.css" />
 		<link rel="stylesheet" href="/res/css/dock.css" />
 		<link rel="stylesheet" href="/res/css/wallpaper.css" />
+		<link rel="stylesheet" href="/res/css/desktop.css" />
 	</head>
 	<body>
 		<div class="lockscreen" id="lockscreen">
@@ -20,7 +21,52 @@
 			</div>
 		</div>
 		<main>
-			<div class="desktop"></div>
+			<div class="desktop">
+				<div class="window window-windowed" style="width: 400px; height: 400px; top: 50px; left: 40px; z-index: 100">
+					<div class="window_head">
+						<div class="window_title" id="window_title">
+							<div class="window_title-icon">
+								<img src="/res/modules/yaru/icons/Yaru/256x256/apps/htop.png" alt="" srcset="" />
+							</div>
+							<div class="window_title-name">Tasks</div>
+						</div>
+						<div class="window_controls">
+							<div class="window_controls-minimize">
+								<img src="/res/modules/yaru/icons/Yaru/scalable/ui/window-minimize-symbolic.svg" alt="" srcset="" />
+							</div>
+							<div class="window_controls-resize">
+								<img src="/res/modules/yaru/icons/Yaru/scalable/ui/window-restore-symbolic.svg" alt="" srcset="" />
+							</div>
+							<div class="window_controls-close">
+								<img src="/res/modules/yaru/icons/Yaru/scalable/ui/window-close-symbolic.svg" alt="" srcset="" />
+							</div>
+						</div>
+					</div>
+					<div class="window_body"></div>
+				</div>
+				<div class="window window-windowed" style="width: 500px; height: 300px; top: 280px; left: 550px; z-index: 110">
+					<div class="window_head">
+						<div class="window_title" id="window_title">
+							<div class="window_title-icon">
+								<img src="/res/modules/yaru/icons/Yaru/256x256/apps/htop.png" alt="" srcset="" />
+							</div>
+							<div class="window_title-name">Tasks</div>
+						</div>
+						<div class="window_controls">
+							<div class="window_controls-minimize">
+								<img src="/res/modules/yaru/icons/Yaru/scalable/ui/window-minimize-symbolic.svg" alt="" srcset="" />
+							</div>
+							<div class="window_controls-resize">
+								<img src="/res/modules/yaru/icons/Yaru/scalable/ui/window-restore-symbolic.svg" alt="" srcset="" />
+							</div>
+							<div class="window_controls-close">
+								<img src="/res/modules/yaru/icons/Yaru/scalable/ui/window-close-symbolic.svg" alt="" srcset="" />
+							</div>
+						</div>
+					</div>
+					<div class="window_body"></div>
+				</div>
+			</div>
 			<div class="dock" id="dock">
 				<div class="dock-home">
 					<!-- This has to be in here and can't be loaded through an image tag so css fill works :c -->

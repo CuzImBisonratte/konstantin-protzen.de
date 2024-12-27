@@ -1,0 +1,109 @@
+.desktop {
+    position: relative;
+}
+
+.window {
+    background-color: #fff;
+    position: absolute;
+}
+
+.window-fullsize {
+    height: 100%;
+    inset: 0;
+}
+
+.window-windowed {
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.window_head {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "window_title window_controls";
+    height: 40px;
+    background-color: var(--background-color);
+    cursor: grab;
+}
+
+.window_title {
+    grid-area: window_title;
+    display: grid;
+    grid-template-columns: min-content auto 1fr;
+    grid-template-rows: 1fr;
+    gap: 0.5rem;
+    grid-template-areas:
+        "window_title-icon window_title-name .";
+    height: 40px;
+    padding-left: 0.25rem;
+}
+
+.window_title-icon {
+    grid-area: window_title-icon;
+    height: 40px;
+}
+
+.window_title-icon img {
+    height: 40px;
+}
+
+.window_title-name {
+    grid-area: window_title-name;
+    display: grid;
+    place-items: center;
+    height: 40px;
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.window_controls {
+    aspect-ratio: 3/1;
+    height: 40px;
+    grid-area: window_controls;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "window_controls-minimize window_controls-resize window_controls-close";
+}
+
+.window_controls>div {
+    cursor: pointer;
+    height: 40px;
+    display: grid;
+    place-content: center;
+}
+
+.window_controls>div:hover {
+    background-color: var(--accent-color);
+}
+
+.window_controls img {
+    /* The icons coming from yare aren't fully white, fixing that */
+    filter: brightness(10);
+    height: 30px;
+}
+
+.window_controls-minimize {
+    grid-area: window_controls-minimize;
+}
+
+.window_controls-resize {
+    grid-area: window_controls-resize;
+}
+
+.window_controls-close {
+    grid-area: window_controls-close;
+}
+
+.window_controls-close>img {
+    fill: #fff;
+}
+
+.window_controls-close:hover {
+    background-color: red;
+}
