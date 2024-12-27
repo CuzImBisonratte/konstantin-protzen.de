@@ -1,5 +1,6 @@
 let locked = true;
 var lockscreen = document.getElementById("lockscreen");
+var main = document.getElementById("main");
 
 // Functions controlling the lockscreen state
 
@@ -7,6 +8,7 @@ function lockscreen_lock() {
     if (locked) return;
     locked = true;
     lockscreen.style.transition = "transform 0.5s";
+    main.style.filter = "blur(10px) brightness(0.25)";
     lockscreen.style.transform = "translateY(0)";
     window.setTimeout(function () {
         lockscreen.style.transition = "transform 0s";
@@ -17,6 +19,7 @@ function lockscreen_unlock() {
     if (!locked) return;
     locked = false;
     lockscreen.style.transition = "transform 0.5s";
+    main.style.filter = "blur(0px) brightness(1)";
     lockscreen.style.transform = "translateY(-100%)";
     window.setTimeout(function () {
         lockscreen.style.transition = "transform 0s";

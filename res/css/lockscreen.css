@@ -1,3 +1,8 @@
+main {
+    filter: blur(10px) brightness(0.25);
+    transition: filter 0.5s;
+}
+
 .lockscreen {
     overflow: hidden;
     width: 100vw;
