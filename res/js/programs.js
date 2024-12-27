@@ -31,7 +31,7 @@ function spawnProgram(windowId, program) {
             </div>
         </div>
         <div class="window_body">
-            <iframe src="/programs/${program}/index.html" frameborder="0"></iframe>
+            <iframe class="window_body_iframe" src="/programs/${program}/index.html" frameborder="0"></iframe>
         </div>
     `;
     window_element.addEventListener("mousedown", moveWindowStart);

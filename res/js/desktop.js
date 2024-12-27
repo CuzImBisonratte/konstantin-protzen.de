@@ -58,9 +58,16 @@ function moveWindowStart(e) {
     activeWindowStart = { x: e.clientX, y: e.clientY };
     activeWindowElementStart = { x: activeWindowElement.offsetLeft, y: activeWindowElement.offsetTop };
     moveWindowUp(activeWindow);
+    // Disable all iframe mouse events (prevent mouse events from being sent to the iframe and not being sent to the window)
+    Object.values(activeWindows).forEach(e => {
+        document.getElementById(e.id).querySelector("iframe").style.pointerEvents = "none";
+    });
 }
 function moveWindowEnd(e) {
     activeWindow = null;
+    Object.values(activeWindows).forEach(e => {
+        document.getElementById(e.id).querySelector("iframe").style.pointerEvents = "auto";
+    });
 }
 window.addEventListener("mousemove", (e) => {
     if (activeWindow) {
