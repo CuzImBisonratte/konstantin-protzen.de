@@ -34,5 +34,7 @@ function spawnProgram(windowId, program) {
             <iframe src="/programs/${program}/index.html" frameborder="0"></iframe>
         </div>
     `;
+    window_element.addEventListener("mousedown", moveWindowStart);
+    window_element.addEventListener("mouseup", moveWindowEnd);
     desktop.appendChild(window_element);
 }

@@ -25,7 +25,7 @@ function updateDockShortcuts() {
     let shortcuts = "";
     // activeWindows from desktop.js
     for (const [key, e] of Object.entries(activeWindows)) {
-        shortcuts += "<div class='dock-shortcut' onclick='focusWindow(\"" + e.id + "\")'><img src='" + e.icon + "' alt='" + e.title + "'></div>";
+        shortcuts += "<div class='dock-shortcut' onclick='moveWindowUp(\"" + e.id + "\")'><img src='" + e.icon + "' alt='" + e.title + "'></div>";
     };
     document.getElementById("dock-shortcuts").innerHTML = shortcuts;
 }

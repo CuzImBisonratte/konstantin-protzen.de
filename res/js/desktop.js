@@ -43,3 +43,31 @@ function moveWindowUp(window_id) {
     updateWindowHeights();
 }
 
+// 
+// Window movement
+//
+let activeWindow = null;
+let activeWindowStart = { x: 0, y: 0 };
+let activeWindowElementStart = { x: 0, y: 0 };
+function moveWindowStart(e) {
+    activeWindowElement = e.target;
+    while (!activeWindowElement.classList.contains("window")) {
+        activeWindowElement = activeWindowElement.parentElement;
+    }
+    activeWindow = activeWindowElement.id;
+    activeWindowStart = { x: e.clientX, y: e.clientY };
+    activeWindowElementStart = { x: activeWindowElement.offsetLeft, y: activeWindowElement.offsetTop };
+    moveWindowUp(activeWindow);
+}
+function moveWindowEnd(e) {
+    activeWindow = null;
+}
+window.addEventListener("mousemove", (e) => {
+    if (activeWindow) {
+        let window_element = document.getElementById(activeWindow);
+        let xOffset = e.clientX - activeWindowStart.x;
+        let yOffset = e.clientY - activeWindowStart.y;
+        window_element.style.left = activeWindowElementStart.x + xOffset + "px";
+        window_element.style.top = activeWindowElementStart.y + yOffset + "px";
+    }
+});
