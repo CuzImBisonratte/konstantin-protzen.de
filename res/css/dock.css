@@ -27,6 +27,7 @@ main {
     gap: 0px 0px;
     grid-template-areas:
         "dock-home dock-seperator dock-shortcuts dock-right";
+    z-index: 900;
 }
 
 .dock-home {
