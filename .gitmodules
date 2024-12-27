@@ -1,0 +1,3 @@
+[submodule "res/modules/yaru"]
+	path = res/modules/yaru
+	url = https://github.com/ubuntu/yaru.git
