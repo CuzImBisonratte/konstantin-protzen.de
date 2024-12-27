@@ -24,7 +24,7 @@
     gap: 0px 0px;
     grid-template-areas:
         "window_title window_controls";
-    height: 40px;
+    height: var(--window-title-size);
     background-color: var(--background-color);
     cursor: grab;
 }
@@ -37,31 +37,31 @@
     gap: 0.5rem;
     grid-template-areas:
         "window_title-icon window_title-name .";
-    height: 40px;
+    height: var(--window-title-size);
     padding-left: 0.25rem;
 }
 
 .window_title-icon {
     grid-area: window_title-icon;
-    height: 40px;
+    height: var(--window-title-size);
 }
 
 .window_title-icon img {
-    height: 40px;
+    height: var(--window-title-size);
 }
 
 .window_title-name {
     grid-area: window_title-name;
     display: grid;
     place-items: center;
-    height: 40px;
+    height: var(--window-title-size);
     font-weight: 500;
-    font-size: 1.125rem;
+    font-size: calc(var(--window-title-size) * 0.5);
 }
 
 .window_controls {
     aspect-ratio: 3/1;
-    height: 40px;
+    height: var(--window-title-size);
     grid-area: window_controls;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -73,7 +73,7 @@
 
 .window_controls>div {
     cursor: pointer;
-    height: 40px;
+    height: var(--window-title-size);
     display: grid;
     place-content: center;
 }
@@ -85,7 +85,7 @@
 .window_controls img {
     /* The icons coming from yare aren't fully white, fixing that */
     filter: brightness(10);
-    height: 30px;
+    height: calc(var(--window-title-size) * 0.75);
 }
 
 .window_controls-minimize {
