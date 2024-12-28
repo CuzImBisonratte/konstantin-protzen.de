@@ -1,6 +1,7 @@
 const desktop = document.getElementById("desktop");
 
 function spawnProgram(windowId, program) {
+    let iframe_url = `/programs/${program}/index.html`;
     let window_element = document.createElement("div");
     window_element.id = windowId;
     window_element.classList.add("window");
@@ -37,10 +38,11 @@ function spawnProgram(windowId, program) {
             </div>
         </div>
         <div class="window_body">
-            <iframe class="window_body_iframe" src="/programs/${program}/index.html" frameborder="0"></iframe>
+            <iframe class="window_body_iframe" src="${iframe_url}" frameborder="0"></iframe>
         </div>
     `;
     window_element.addEventListener("mousedown", moveWindowStart);
     window_element.addEventListener("mouseup", moveWindowEnd);
-    desktop.appendChild(window_element);
+    desktop.prepend(window_element);
+    highestWindow = windowId;
 }

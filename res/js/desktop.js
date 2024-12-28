@@ -1,4 +1,5 @@
 let activeWindows = {};
+let highestWindow = "";
 
 class window_obj {
     title;
@@ -83,8 +84,10 @@ function moveWindowUp(window_id) {
         }
     });
     window.index = maxIndex;
-    updateWindowHeights();
+    highestWindow = window_id;
     window.restore();
+    updateWindowHeights();
+    repositionResizingElement();
 }
 
 // 
@@ -123,4 +126,46 @@ window.addEventListener("mousemove", (e) => {
         window_element.style.left = activeWindows[activeWindow].position.x + "px";
         window_element.style.top = activeWindows[activeWindow].position.y + "px";
     }
+    repositionResizingElement();
+});
+
+// 
+// Window Resizing
+// 
+const resizingElement = document.getElementById("window_resize_area");
+function repositionResizingElement() {
+    if (!highestWindow) return;
+    // Check if the window is maximized, if so, disable the resizing element
+    if (document.getElementById(highestWindow).classList.contains("window-maximized")) resizingElement.style.display = "none";
+    else resizingElement.style.display = "block";
+
+    let x = document.getElementById(highestWindow).offsetLeft + document.getElementById(highestWindow).offsetWidth;
+    let y = document.getElementById(highestWindow).offsetTop + document.getElementById(highestWindow).offsetHeight;
+    resizingElement.style.left = x - resizingElement.offsetWidth / 1.5 + "px";
+    resizingElement.style.top = y - resizingElement.offsetHeight / 1.5 + "px";
+}
+let resizeMouseDown = { x: 0, y: 0, w: 0, h: 0 };
+resizingElement.addEventListener("mousedown", (e) => {
+    resizeMouseDown = {
+        x: e.clientX,
+        y: e.clientY,
+        w: activeWindows[highestWindow].position.w,
+        h: activeWindows[highestWindow].position.h
+    };
+    // Resize, so the mouse - even when moved quickly - is still in resizeElements perimeter and cant be catched by an iframe
+    resizingElement.style.transform = "scale(5)";
+});
+window.addEventListener("mousemove", (e) => {
+    if (resizeMouseDown.x == 0 || resizeMouseDown.y == 0) return;
+    let xOffset = e.clientX - resizeMouseDown.x;
+    let yOffset = e.clientY - resizeMouseDown.y;
+    activeWindows[highestWindow].position.w = resizeMouseDown.w + xOffset;
+    activeWindows[highestWindow].position.h = resizeMouseDown.h + yOffset;
+    document.getElementById(highestWindow).style.width = activeWindows[highestWindow].position.w + "px";
+    document.getElementById(highestWindow).style.height = activeWindows[highestWindow].position.h + "px";
+    repositionResizingElement();
+});
+resizingElement.addEventListener("mouseup", (e) => {
+    resizeMouseDown = { x: 0, y: 0, w: 0, h: 0 };
+    resizingElement.style.transform = "scale(1)";
 });

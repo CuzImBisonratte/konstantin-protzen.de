@@ -124,3 +124,21 @@
     height: 100%;
     border: none;
 }
+
+/* 
+Windows are resizes using a help area that is put on top of the windows bottom right edge. This needs to be done, as otherwise cursor input would be blocked by the iframes.
+*/
+#window_resize_area {
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0);
+    display: none;
+    cursor: nwse-resize;
+    width: var(--window-resize-size);
+    height: var(--window-resize-size);
+    z-index: 850;
+}
+
+/* Only display:block if any other .window exists */
+.window+#window_resize_area {
+    display: block;
+}
