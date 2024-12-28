@@ -120,6 +120,8 @@ function moveWindowEnd(e) {
     });
 }
 function handleWindowMove(e) {
+    // Check if the window is maximized, if so, disable the moving
+    if (activeWindow && document.getElementById(activeWindow).classList.contains("window-maximized")) return;
     if (activeWindow) {
         let window_element = document.getElementById(activeWindow);
         let xOffset = (e.touches ? e.touches[0].clientX : e.clientX) - activeWindowStart.x;
