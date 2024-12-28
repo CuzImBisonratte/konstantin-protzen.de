@@ -43,6 +43,8 @@ function spawnProgram(windowId, program) {
     `;
     window_element.addEventListener("mousedown", moveWindowStart);
     window_element.addEventListener("mouseup", moveWindowEnd);
+    window_element.addEventListener("touchstart", moveWindowStart);
+    window_element.addEventListener("touchend", moveWindowEnd);
     desktop.prepend(window_element);
     highestWindow = windowId;
 }

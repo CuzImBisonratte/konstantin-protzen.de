@@ -102,7 +102,10 @@ function moveWindowStart(e) {
         activeWindowElement = activeWindowElement.parentElement;
     }
     activeWindow = activeWindowElement.id;
-    activeWindowStart = { x: e.clientX, y: e.clientY };
+    activeWindowStart = {
+        x: e.touches ? e.touches[0].clientX : e.clientX,
+        y: e.touches ? e.touches[0].clientY : e.clientY
+    };
     activeWindowElementStart = { x: activeWindowElement.offsetLeft, y: activeWindowElement.offsetTop };
     moveWindowUp(activeWindow);
     // Disable all iframe mouse events (prevent mouse events from being sent to the iframe and not being sent to the window)
@@ -116,18 +119,20 @@ function moveWindowEnd(e) {
         document.getElementById(e.id).querySelector("iframe").style.pointerEvents = "auto";
     });
 }
-window.addEventListener("mousemove", (e) => {
+function handleWindowMove(e) {
     if (activeWindow) {
         let window_element = document.getElementById(activeWindow);
-        let xOffset = e.clientX - activeWindowStart.x;
-        let yOffset = e.clientY - activeWindowStart.y;
+        let xOffset = (e.touches ? e.touches[0].clientX : e.clientX) - activeWindowStart.x;
+        let yOffset = (e.touches ? e.touches[0].clientY : e.clientY) - activeWindowStart.y;
         activeWindows[activeWindow].position.x = activeWindowElementStart.x + xOffset;
         activeWindows[activeWindow].position.y = activeWindowElementStart.y + yOffset;
         window_element.style.left = activeWindows[activeWindow].position.x + "px";
         window_element.style.top = activeWindows[activeWindow].position.y + "px";
     }
     repositionResizingElement();
-});
+}
+window.addEventListener("mousemove", handleWindowMove);
+window.addEventListener("touchmove", handleWindowMove);
 
 // 
 // Window Resizing
