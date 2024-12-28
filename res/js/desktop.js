@@ -150,27 +150,35 @@ function repositionResizingElement() {
     resizingElement.style.top = y - resizingElement.offsetHeight / 1.5 + "px";
 }
 let resizeMouseDown = { x: 0, y: 0, w: 0, h: 0 };
-resizingElement.addEventListener("mousedown", (e) => {
+function handleResizeMouseDown(e) {
     resizeMouseDown = {
-        x: e.clientX,
-        y: e.clientY,
+        x: e.clientX || e.touches[0].clientX,
+        y: e.clientY || e.touches[0].clientY,
         w: activeWindows[highestWindow].position.w,
         h: activeWindows[highestWindow].position.h
     };
-    // Resize, so the mouse - even when moved quickly - is still in resizeElements perimeter and cant be catched by an iframe
     resizingElement.style.transform = "scale(5)";
-});
-window.addEventListener("mousemove", (e) => {
+}
+
+function handleResizeMouseMove(e) {
     if (resizeMouseDown.x == 0 || resizeMouseDown.y == 0) return;
-    let xOffset = e.clientX - resizeMouseDown.x;
-    let yOffset = e.clientY - resizeMouseDown.y;
+    let xOffset = (e.clientX || e.touches[0].clientX) - resizeMouseDown.x;
+    let yOffset = (e.clientY || e.touches[0].clientY) - resizeMouseDown.y;
     activeWindows[highestWindow].position.w = resizeMouseDown.w + xOffset;
     activeWindows[highestWindow].position.h = resizeMouseDown.h + yOffset;
     document.getElementById(highestWindow).style.width = activeWindows[highestWindow].position.w + "px";
     document.getElementById(highestWindow).style.height = activeWindows[highestWindow].position.h + "px";
     repositionResizingElement();
-});
-resizingElement.addEventListener("mouseup", (e) => {
+}
+
+function handleResizeMouseUp(e) {
     resizeMouseDown = { x: 0, y: 0, w: 0, h: 0 };
     resizingElement.style.transform = "scale(1)";
-});
+}
+
+resizingElement.addEventListener("mousedown", handleResizeMouseDown);
+resizingElement.addEventListener("touchstart", handleResizeMouseDown);
+window.addEventListener("mousemove", handleResizeMouseMove);
+window.addEventListener("touchmove", handleResizeMouseMove);
+resizingElement.addEventListener("mouseup", handleResizeMouseUp);
+resizingElement.addEventListener("touchend", handleResizeMouseUp);
