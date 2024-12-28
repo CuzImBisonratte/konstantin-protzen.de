@@ -57,7 +57,7 @@ class window_obj {
     }
     restore() {
         let window_element = document.getElementById(this.id);
-        window_element.style.display = "block";
+        window_element.style.display = "grid";
         window_element.style.transition = "transform 0.25s";
         window_element.style.transform = "translateY(0%) scale(1)";
         window.setTimeout(() => { window_element.style.transition = "none"; }, 250);
