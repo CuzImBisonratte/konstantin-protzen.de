@@ -6,6 +6,7 @@ class window_obj {
     id;
     index;
     type;
+    position = { x: 0, y: 0, w: 0, h: 0 };
     constructor(parameters) {
         this.title = parameters.title;
         this.icon = parameters.icon;
@@ -26,6 +27,24 @@ class window_obj {
             }
         });
         updateWindowHeights();
+    }
+    toggleMaximize() {
+        let window_element = document.getElementById(this.id);
+        if (window_element.classList.contains("window-windowed")) {
+            window_element.classList.remove("window-windowed");
+            window_element.classList.add("window-maximized");
+            window_element.style.width = "100%";
+            window_element.style.height = "100%";
+            window_element.style.top = "0px";
+            window_element.style.left = "0px";
+        } else {
+            window_element.classList.remove("window-maximized");
+            window_element.classList.add("window-windowed");
+            window_element.style.width = this.position.w + "px";
+            window_element.style.height = this.position.h + "px";
+            window_element.style.top = this.position.y + "px";
+            window_element.style.left = this.position.x + "px";
+        }
     }
 }
 
@@ -82,7 +101,9 @@ window.addEventListener("mousemove", (e) => {
         let window_element = document.getElementById(activeWindow);
         let xOffset = e.clientX - activeWindowStart.x;
         let yOffset = e.clientY - activeWindowStart.y;
-        window_element.style.left = activeWindowElementStart.x + xOffset + "px";
-        window_element.style.top = activeWindowElementStart.y + yOffset + "px";
+        activeWindows[activeWindow].position.x = activeWindowElementStart.x + xOffset;
+        activeWindows[activeWindow].position.y = activeWindowElementStart.y + yOffset;
+        window_element.style.left = activeWindows[activeWindow].position.x + "px";
+        window_element.style.top = activeWindows[activeWindow].position.y + "px";
     }
 });

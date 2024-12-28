@@ -5,11 +5,17 @@ function spawnProgram(windowId, program) {
     window_element.id = windowId;
     window_element.classList.add("window");
     window_element.classList.add("window-windowed");
-    window_element.style.width = window.innerWidth / 2 + "px";
-    window_element.style.height = window.innerHeight / 2 + "px";
-    window_element.style.top = "100px";
-    window_element.style.left = "100px";
     window_element.style.zIndex = 100 + activeWindows[windowId].index * 10;
+    activeWindows[windowId].position = {
+        x: 100,
+        y: 100,
+        w: window.innerWidth / 2,
+        h: window.innerHeight / 2
+    };
+    window_element.style.width = activeWindows[windowId].position.w + "px";
+    window_element.style.height = activeWindows[windowId].position.h + "px";
+    window_element.style.top = activeWindows[windowId].position.y + "px";
+    window_element.style.left = activeWindows[windowId].position.x + "px";
     window_element.innerHTML = `
         <div class="window_head">
             <div class="window_title" id="window_title">
@@ -22,7 +28,7 @@ function spawnProgram(windowId, program) {
                 <div class="window_controls-minimize">
                     <img src="/res/modules/yaru/icons/Yaru/scalable/ui/window-minimize-symbolic.svg" alt="" srcset="" />
                 </div>
-                <div class="window_controls-resize">
+                <div class="window_controls-resize" onclick="activeWindows['${windowId}'].toggleMaximize()">
                     <img src="/res/modules/yaru/icons/Yaru/scalable/ui/window-restore-symbolic.svg" alt="" srcset="" />
                 </div>
                 <div class="window_controls-close" onclick="activeWindows['${windowId}'].destroy()">
