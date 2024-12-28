@@ -46,6 +46,22 @@ class window_obj {
             window_element.style.left = this.position.x + "px";
         }
     }
+    minimize() {
+        let window_element = document.getElementById(this.id);
+        window_element.style.transition = "transform 0.25s";
+        window_element.style.transform = "translateY(100%) scale(0.5)";
+        window.setTimeout(() => {
+            window_element.style.transition = "none";
+            window_element.style.display = "none";
+        }, 250);
+    }
+    restore() {
+        let window_element = document.getElementById(this.id);
+        window_element.style.display = "block";
+        window_element.style.transition = "transform 0.25s";
+        window_element.style.transform = "translateY(0%) scale(1)";
+        window.setTimeout(() => { window_element.style.transition = "none"; }, 250);
+    }
 }
 
 window.setTimeout(() => { new window_obj({ title: "WebBrowser", icon: "/res/modules/yaru/icons/Yaru/256x256/apps/web-browser.png", type: "web" }); }, 1000);
@@ -68,6 +84,7 @@ function moveWindowUp(window_id) {
     });
     window.index = maxIndex;
     updateWindowHeights();
+    window.restore();
 }
 
 // 

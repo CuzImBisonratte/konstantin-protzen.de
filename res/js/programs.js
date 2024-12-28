@@ -25,7 +25,7 @@ function spawnProgram(windowId, program) {
                 <div class="window_title-name">${activeWindows[windowId].title}</div>
             </div>
             <div class="window_controls">
-                <div class="window_controls-minimize">
+                <div class="window_controls-minimize" onclick="activeWindows['${windowId}'].minimize()">
                     <img src="/res/modules/yaru/icons/Yaru/scalable/ui/window-minimize-symbolic.svg" alt="" srcset="" />
                 </div>
                 <div class="window_controls-resize" onclick="activeWindows['${windowId}'].toggleMaximize()">
