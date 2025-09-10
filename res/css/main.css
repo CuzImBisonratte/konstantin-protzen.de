@@ -35,3 +35,17 @@ body {
 .accent-text {
     color: var(--accent-color);
 }
+
+.sensitive {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    user-select: none;
+    cursor: default;
+}
+
+.sensitive-no {
+    color: transparent;
+    margin: 0;
+    padding: 0;
+    font-size: 0.5em;
+}

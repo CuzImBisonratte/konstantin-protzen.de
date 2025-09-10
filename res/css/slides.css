@@ -76,6 +76,11 @@ Home slide
     line-height: 2rem;
 }
 
+.aboutme-facts .accent-text {
+    aspect-ratio: 1/1;
+    width: 1.2rem;
+    text-align: center;
+}
 
 /* Portfolio */
 
@@ -138,7 +143,8 @@ Home slide
     grid-template-rows: 1fr 1fr;
     gap: 1rem;
     grid-auto-flow: row;
-    grid-template-areas: "portfolio-p1 portfolio-p2" "portfolio-p3 portfolio-p4"
+    grid-template-areas: "portfolio-p1 portfolio-p2" "portfolio-p3 portfolio-p4";
+    margin-bottom: 3rem;
 }
 
 #portfolio-p1 {
@@ -151,6 +157,10 @@ Home slide
 
 #portfolio-p3 {
     grid-area: portfolio-p3;
+}
+
+#portfolio-p4 {
+    grid-area: portfolio-p4;
 }
 
 .portfolio-project {

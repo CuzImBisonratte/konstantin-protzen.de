@@ -33,11 +33,10 @@ Category buttons
     border-radius: 2rem;
     display: grid;
     place-content: center;
-    margin: auto;
     aspect-ratio: 1/1;
-    margin-top: 0.25rem;
     cursor: pointer;
     transition: 0.5s color;
+    margin: 1.5rem auto;
 }
 
 .main-categories>i:hover {
@@ -51,6 +50,8 @@ Category buttons
     background: var(--background2-color);
     color: var(--text-color);
     transition: 0.5s;
+    padding: 1.5rem 0;
+    margin: auto;
 }
 
 
@@ -68,11 +69,10 @@ Arrow buttons
 .main-arrows>i {
     display: grid;
     place-content: center;
-    margin: auto;
     aspect-ratio: 1/1;
-    margin-top: 0.25rem;
     cursor: pointer;
     transition: 0.5s color, 1s opacity;
+    margin: 1.5rem auto;
 }
 
 .main-arrows>i:not(.arrow_nohover):hover {

@@ -39,7 +39,7 @@
         aspect-ratio: 1/1;
         rotate: 270deg;
         place-items: center;
-        margin-top: 0;
+        margin: auto 1.2rem;
     }
 
     .main-categories>i {
@@ -47,7 +47,7 @@
         display: inline-flex;
         aspect-ratio: 1/1;
         place-items: center;
-        margin-top: 0;
+        margin: auto 1.2rem;
     }
 
     .main-mainview {
@@ -108,8 +108,17 @@
         display: none;
     }
 
+
     .main-categories {
         display: flex;
+    }
+
+    .main-categories>i {
+        height: 100%;
+        display: inline-flex;
+        aspect-ratio: 1/1;
+        place-items: center;
+        margin: auto;
     }
 
     .slide {

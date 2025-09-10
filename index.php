@@ -1,7 +1,8 @@
 <?php
 
-// Get the no-github values
-require_once("no-github.php");
+// Get age for about me section - 25.01.2008
+$age = date("Y") - 2008;
+if (date("md") < "0125") $age--;
 
 ?>
 <!DOCTYPE html>
@@ -11,7 +12,7 @@ require_once("no-github.php");
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Konstantin Protzen | Webdevelopment und Design</title>
+    <title>Konstantin Protzen | Development und IT-Nerd</title>
     <!-- Stylesheets -->
     <link rel="stylesheet" href="/res/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="/res/fontawesome/css/brands.min.css">
@@ -28,15 +29,14 @@ require_once("no-github.php");
     <meta property="twitter:domain" content="konstantin-protzen.de">
     <meta property="og:title" content="Konstantin Protzen">
     <meta name="twitter:title" content="Konstantin Protzen">
-    <meta property="og:description" content="Webdevelopment | UI/UX Design">
-    <meta name="twitter:description" content="Webdevelopment | UI/UX Design">
+    <meta property="og:description" content="Development und IT-Nerd">
+    <meta name="twitter:description" content="Development und IT-Nerd">
     <meta property="og:image" content="https://konstantin-protzen.de/res/img/logo-transparent.png">
     <meta name="twitter:image" content="https://konstantin-protzen.de/res/img/logo-transparent.png">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="description" content="Hi, Ich bin Konstantin Protzen, ein Full-Stack-Webentwickler und UI/UX-Designer.">
-    <meta name="keywords"
-        content="Konstantin Protzen, Konstantin, Protzen, Webdevelopment, Webentwicklung, Web, Development, Entwickler, Designer, UI, UX, Design, Full-Stack, Fullstack, Full, Stack, Full-Stack-Developer, Full-Stack-Entwickler, Full-Stack-Design, Deutschland, Germany, DE, DEU, DEU, DACH">
+    <meta name="keywords" content="Konstantin Protzen, Konstantin, Protzen, Webdevelopment, Webentwicklung, Web, Development, Entwickler, Designer, UI, UX, Design, Full-Stack, Fullstack, Full, Stack, Full-Stack-Developer, Full-Stack-Entwickler, Full-Stack-Design, Deutschland, Germany, DE, DEU, DEU, DACH">
     <meta name="author" content="Konstantin Protzen">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
@@ -63,17 +63,15 @@ require_once("no-github.php");
         </div>
     </a>
     <div id="copyright-notice">
-        &copy; 2023 - <span id="current_year"></span>
+        &copy; Konstantin Protzen - 2025
     </div>
     <main>
         <div class="main-categories">
-            <i onclick="switchSlide(1);" class="fa-solid fa-house" id="category_opener-home"
-                style="color:var(--accent2-color);"></i>
+            <i onclick="switchSlide(1);" class="fa-solid fa-house" id="category_opener-home" style="color:var(--accent2-color);"></i>
             <i onclick="switchSlide(2);" class="fa-solid fa-user" id="category_opener-aboutme"></i>
             <i onclick="switchSlide(3);" class="fa-solid fa-bars-progress" id="category_opener-portfolio"></i>
             <i onclick="switchSlide(4);" class="fa-solid fa-graduation-cap" id="category_opener-education"></i>
-            <i id="mail-button" onclick="location.assign('mailto:<?= CUSTOM_VALUE_EMAIL ?>');"
-                class="fa-solid fa-envelope"></i>
+            <i id="mail-button" onclick="window.open('https://protzen.it/#contact');" class="fa-solid fa-envelope"></i>
         </div>
         <div class="main-arrows">
             <i onclick="nextSlide();" id="arrow_up" class="fa-solid fa-angle-up arrow_nohover"></i>
@@ -87,25 +85,20 @@ require_once("no-github.php");
                 <div class="profile-title">
                     <div>
                         <h1>Konstantin<br>Protzen</h1>
-                        <p>Webentwicklung | UI/UX Design</p>
+                        <p>Development | IT-Nerd</p>
                     </div>
                 </div>
                 <div class="profile-socials">
-                    <i onclick="window.open('<?= CUSTOM_VALUE_LINK_GITHUB ?>', '_blank');"
-                        class="fa-brands fa-github"></i>
-                    <i onclick="window.open('<?= CUSTOM_VALUE_LINK_MASTODON ?>', '_blank');"
-                        class="fa-brands fa-mastodon"></i>
-                    <i onclick="window.open('<?= CUSTOM_VALUE_LINK_DISCORD ?>', '_blank');"
-                        class="fa-brands fa-discord"></i>
-                    <i onclick="window.open('<?= CUSTOM_VALUE_LINK_STEAM ?>', '_blank');"
-                        class="fa-brands fa-steam"></i>
+                    <i onclick="window.open('https://github.com/cuzimbisonratte', '_blank');" class="fa-brands fa-github"></i>
+                    <i onclick="window.open('https://bsky.app/profile/kondev.de', '_blank');" class="fa-brands fa-bluesky"></i>
+                    <i onclick="window.open('https://s.team/p/cqmc-jtcd', '_blank');" class="fa-brands fa-steam"></i>
                 </div>
             </div>
             <div class="main-slides">
                 <div class="slide" id="slide-home">
                     <div>
                         <h1>Konstantin Protzen</h1>
-                        <h2>Webentwicklung | UI/UX Design</h2>
+                        <h2>Development | IT-Nerd</h2>
                     </div>
                 </div>
                 <div class="slide slide-hide_by_default" id="slide-aboutme">
@@ -114,17 +107,24 @@ require_once("no-github.php");
                             <h1>Über <span class="accent-text">mich</span></h1>
                         </div>
                         <div class="aboutme-text">
-                            Hallo, ich bin Konstantin. <br>
-                            Ich bin ein <span id="age-field"></span> Jahre alter Full-Stack-Webentwickler und
-                            UI/UX-Designer aus Deutschland. Aktuell bin ich noch Schüler.
+                            Hallo, ich bin Konstantin. Ich bin ein <span id="age-field"><?= $age ?></span> Jahre alter Full-Stack-Webentwickler und
+                            UI/UX-Designer aus Deutschland (BaWü).
+                            <br><br>
+                            Aktuell bin ich noch Schüler, jedoch seit Mitte 2025 autodidaktisch selbstständig in der IT-Branche.
+                            <br><br>
+                            Meine Leidenschaft liegt in der Webentwicklung und im Design. Ich liebe es, kreative und funktionale
+                            Websites zu gestalten und zu entwickeln, die sowohl ästhetisch ansprechend als auch benutzerfreundlich sind.
+                            Zusätzlich interessiere ich mich für Fotografie und Grafikdesign.
+                            <br><br>
+                            In meiner Freizeit beschäftige ich mich gerne mit neuen Technologien und verbessere ständig meine Fähigkeiten
+                            in meinem Home-Lab mit verschiedenen Servern und anderer Technik zu Hause. Zusätzlich helfe ich bei der IT-Administration in einer Wirtschaftsprüngs- und Steuerberatungskanzlei.
+                            <br><br>
+                            Zukünftig strebe ich an, in die App-Entwicklung einzusteigen und meine Kenntnisse in diversen Bereichen der IT zu erweitern.
                         </div>
                         <div class="aboutme-facts">
-                            <span class="accent-text"><i class="fa-solid fa-at"></i></span><span
-                                class="aboutme-fact"><?= CUSTOM_VALUE_EMAIL ?></span><br>
-                            <span class="accent-text"><i class="fa-solid fa-phone"></i></span><span
-                                class="aboutme-fact"><?= CUSTOM_VALUE_PHONE ?></span><br>
-                            <span class="accent-text"><i class="fa-solid fa-location-pin"></i></span><span
-                                class="aboutme-fact">Germany</span><br>
+                            <span class="accent-text"><i class="fa-solid fa-at"></i></span><span class="aboutme-fact"><span class="sensitive">ed.ti-neztorp<span class="sensitive-no">a</span>@<span class="sensitive-no">o</span>tkatnok<span class="sensitive-no">e</span></span></span><br>
+                            <span class="accent-text"><i class="fa-solid fa-phone"></i></span><span class="aboutme-fact"><span class="sensitive">8391<span class="sensitive-no">7</span>8187<span class="sensitive-no">7</span>651<span class="sensitive-no">0</span>(0)<span class="sensitive-no">0</span>94+<span class="sensitive-no">+</span></span></span><br>
+                            <span class="accent-text"><i class="fa-solid fa-location-pin"></i></span><span class="aboutme-fact">Baden-Baden, Germany</span><br>
                         </div>
                     </div>
                 </div>
@@ -172,30 +172,16 @@ require_once("no-github.php");
                             <h1>Meine <span class="accent-text">Projekte</span></h1>
                         </div>
                         <div class="portfolio-projects_table">
-                            <div class="portfolio-project" id="portfolio-p1"
-                                onclick="window.open('https://sharesimple.de', '_blank');">
+                            <div class="portfolio-project" id="portfolio-p1" onclick="window.open('https://sharesimple.de', '_blank');">
                                 <div class="portfolio-project-title">
                                     <div>
                                         <h2>Sharesimple</h2>
                                         <p>Share files with your friends at ease</p>
                                     </div>
                                 </div>
-                                <img src="/res/img/assets/projects_sharesimple.png" alt="Sharesimple" srcset=""
-                                    class="portfolio-project-image">
+                                <img src="/res/img/assets/projects_sharesimple.png" alt="Sharesimple" srcset="" class="portfolio-project-image">
                             </div>
-                            <div class="portfolio-project" id="portfolio-p2"
-                                onclick="window.open('https://noten-app.de', '_blank');">
-                                <div class="portfolio-project-title">
-                                    <div>
-                                        <h2>Noten-App</h2>
-                                        <p>Der einzige Schulplaner den du je brauchst!</p>
-                                    </div>
-                                </div>
-                                <img src="/res/img/assets/projects_noten-app.png" alt="Noten-App" srcset=""
-                                    class="portfolio-project-image">
-                            </div>
-                            <div class="portfolio-project" id="portfolio-p3"
-                                onclick="alert('This project is not yet available.');">
+                            <div class="portfolio-project" id="portfolio-p2" onclick="window.open('https://protzen-wissler.de');">
                                 <div class="portfolio-project-title">
                                     <div>
                                         <h2>Wissler & Protzen</h2>
@@ -204,8 +190,25 @@ require_once("no-github.php");
                                         </p>
                                     </div>
                                 </div>
-                                <img src="/res/img/assets/projects_wup.png" alt="Wissler&Protzen" srcset=""
-                                    class="portfolio-project-image">
+                                <img src="/res/img/assets/projects_wup.png" alt="Wissler&Protzen" srcset="" class="portfolio-project-image">
+                            </div>
+                            <div class="portfolio-project" id="portfolio-p3" onclick="window.open('https://portfolio.konstantin-protzen.de', '_blank');">
+                                <div class="portfolio-project-title">
+                                    <div>
+                                        <h2>Portfolio</h2>
+                                        <p>Fotografie aus Leidenschaft</p>
+                                    </div>
+                                </div>
+                                <img src="/res/img/assets/projects_portfolio.png" alt="Portfolio" srcset="" class="portfolio-project-image">
+                            </div>
+                            <div class="portfolio-project" id="portfolio-p4" onclick="window.open('https://protzen.it', '_blank');">
+                                <div class="portfolio-project-title">
+                                    <div>
+                                        <h2>Protzen-IT</h2>
+                                        <p>IT aus Baden-Baden</p>
+                                    </div>
+                                </div>
+                                <img src="/res/img/assets/projects_protzen-it.png" alt="Noten-App" srcset="" class="portfolio-project-image">
                             </div>
 
                         </div>
@@ -219,10 +222,7 @@ require_once("no-github.php");
                         <div class="careerpath">
                             <div class="careerpath-work">
                                 <span class="work-title">
-                                    <h3 class="accent-text"><a href="https://www.protzen-wissler.de/"
-                                            title="Startseite des Unternehmens Wissler und Protzen"
-                                            class="accent-text">Wissler &amp; Protzen <i
-                                                class="fa-solid fa-external-link"></i></a></h3> (Seit 2022)
+                                    <h3 class="accent-text"><a href="https://www.protzen-wissler.de/" title="Startseite des Unternehmens Wissler und Protzen" class="accent-text">Wissler &amp; Protzen <i class="fa-solid fa-external-link"></i></a></h3> (Seit 2022)
                                 </span>
                                 <ul class="work-details">
                                     <li>Technische Unterstützung</li>
@@ -244,9 +244,7 @@ require_once("no-github.php");
                                     <h3 class="accent-text">Weiterf&uuml;hrende Schule</h3> (Seit 2023)
                                 </span>
                                 <div class="school-details">
-                                    <p><a href="https://www.lls-bad.de/"
-                                            title="Startseite der Louis Lepoix Schule">Louis Lepoix Schule <i
-                                                class="fa-solid fa-external-link"></i></a> - Technisches Gymnasium</p>
+                                    <p><a href="https://www.lls-bad.de/" title="Startseite der Louis Lepoix Schule">Louis Lepoix Schule <i class="fa-solid fa-external-link"></i></a> - Technisches Gymnasium</p>
                                     <p>Baden-Baden, Deutschland</p>
                                 </div>
                             </div>
@@ -255,9 +253,7 @@ require_once("no-github.php");
                                     <h3 class="accent-text">Weiterf&uuml;hrende Schule</h3> (2017 - 2023)
                                 </span>
                                 <div class="school-details">
-                                    <p><a href="https://www.gymnasium-hohenbaden.de/"
-                                            title="Startseite des Gymnasium Hohenbaden">Gymnasium Hohenbaden <i
-                                                class="fa-solid fa-external-link"></i></a> - Altsprachlich
+                                    <p><a href="https://www.gymnasium-hohenbaden.de/" title="Startseite des Gymnasium Hohenbaden">Gymnasium Hohenbaden <i class="fa-solid fa-external-link"></i></a> - Altsprachlich
                                         Humanistisches Gymnasium</p>
                                     <p>Baden-Baden, Deutschland</p>
                                 </div>
@@ -267,9 +263,7 @@ require_once("no-github.php");
                                     <h3 class="accent-text">Grundschule</h3> (2013 - 2017)
                                 </span>
                                 <div class="school-details">
-                                    <p><a href="https://www.klosterschule-lichtental.de/"
-                                            title="Startseite der Klosterschule Lichtental">Klosterschule Lichtental <i
-                                                class="fa-solid fa-external-link"></i></a></p>
+                                    <p><a href="https://www.klosterschule-lichtental.de/" title="Startseite der Klosterschule Lichtental">Klosterschule Lichtental <i class="fa-solid fa-external-link"></i></a></p>
                                     <p>Lichtental Baden-Baden, Deutschland</p>
                                 </div>
                             </div>
@@ -283,8 +277,7 @@ require_once("no-github.php");
                         <div class="careerpath">
                             <div class="careerpath-school">
                                 <span class="work-title">
-                                    <h3 class="accent-text"><a href="https://www.lls-bad.de/"
-                                            title="Homepage der Louis-Lepoix-Schule" class="accent-text">Mitglied der
+                                    <h3 class="accent-text"><a href="https://www.lls-bad.de/" title="Homepage der Louis-Lepoix-Schule" class="accent-text">Mitglied der
                                             SMV an der Louis-Lepoix-Schule <i class="fa-solid fa-external-link"></i></a>
                                     </h3> (Seit 2023)
                                 </span>
@@ -298,11 +291,7 @@ require_once("no-github.php");
                             </div>
                             <div class="careerpath-school">
                                 <span class="work-title">
-                                    <h3 class="accent-text"><a
-                                            href="https://web.archive.org/web/20231114121040/https://kijub-baden-baden.de/jugendforum/das-jugendforum/#expand"
-                                            title="Übersichtsseite für das Jugendforum Baden-Baden zur Zeit meiner Wahlperiode"
-                                            class="accent-text">Jugendsprecher Baden-Baden <i
-                                                class="fa-solid fa-external-link"></i></a></h3> (Wahlperiode 2023/2024)
+                                    <h3 class="accent-text"><a href="https://web.archive.org/web/20231114121040/https://kijub-baden-baden.de/jugendforum/das-jugendforum/#expand" title="Übersichtsseite für das Jugendforum Baden-Baden zur Zeit meiner Wahlperiode" class="accent-text">Jugendsprecher Baden-Baden <i class="fa-solid fa-external-link"></i></a></h3> (Wahlperiode 2023/2024)
                                 </span>
                                 <ul class="work-details">
                                     <li>Politisches Engagement</li>
@@ -311,11 +300,7 @@ require_once("no-github.php");
                             </div>
                             <div class="careerpath-school">
                                 <span class="work-title">
-                                    <h3 class="accent-text"><a
-                                            href="https://www.gymnasium-hohenbaden.de/index.php/gemeinschaft/schueler-und-smv"
-                                            title="Unterseite des Gymnasium Hohenbadens zur Erklärung der SMV"
-                                            class="accent-text">Mitglied der SMV am Gymnasium Hohenbaden <i
-                                                class="fa-solid fa-external-link"></i></a></h3> (2018 - 2023)
+                                    <h3 class="accent-text"><a href="https://www.gymnasium-hohenbaden.de/index.php/gemeinschaft/schueler-und-smv" title="Unterseite des Gymnasium Hohenbadens zur Erklärung der SMV" class="accent-text">Mitglied der SMV am Gymnasium Hohenbaden <i class="fa-solid fa-external-link"></i></a></h3> (2018 - 2023)
                                 </span>
                                 <ul class="work-details">
                                     <li>Interessensvertretung</li>
@@ -335,7 +320,6 @@ require_once("no-github.php");
     <script src="/res/js/debug.js"></script>
     <script src="/res/js/shuffleskills.js"></script>
     <script src="/res/js/smaller.js"></script>
-    <script src="/res/js/year-actions.js"></script>
     <?php if (isset($_GET['slide'])) echo '<script>switchSlide(' . htmlspecialchars($_GET["slide"]) . ');</script>'; ?>
 </body>
 
