@@ -117,7 +117,7 @@ if (date("md") < "0125") $age--;
                             Zusätzlich interessiere ich mich für Fotografie und Grafikdesign.
                             <br><br>
                             In meiner Freizeit beschäftige ich mich gerne mit neuen Technologien und verbessere ständig meine Fähigkeiten
-                            in meinem Home-Lab mit verschiedenen Servern und anderer Technik zu Hause. Zusätzlich helfe ich bei der IT-Administration in einer Wirtschaftsprüngs- und Steuerberatungskanzlei.
+                            in meinem Home-Lab mit verschiedenen Servern und anderer Technik zu Hause. Zusätzlich helfe ich bei der IT-Administration in einer Wirtschaftsprünfugs- und Steuerberatungskanzlei.
                             <br><br>
                             Zukünftig strebe ich an, in die App-Entwicklung einzusteigen und meine Kenntnisse in diversen Bereichen der IT zu erweitern.
                         </div>
