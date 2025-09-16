@@ -222,6 +222,16 @@ if (date("md") < "0125") $age--;
                         <div class="careerpath">
                             <div class="careerpath-work">
                                 <span class="work-title">
+                                    <h3 class="accent-text"><a href="https://www.protzen-it.de/" title="Startseite meines Unternehmens" class="accent-text">Protzen-IT <i class="fa-solid fa-external-link"></i></a></h3> (Seit 2025)
+                                </span>
+                                <ul class="work-details">
+                                    <li>Selbstständigkeit</li>
+                                    <li>Lösungsfindung / Konfiguration von Systemen</li>
+                                    <li>Support von Heim- und Netzwerktechnik</li>
+                                </ul>
+                            </div>
+                            <div class="careerpath-work">
+                                <span class="work-title">
                                     <h3 class="accent-text"><a href="https://www.protzen-wissler.de/" title="Startseite des Unternehmens Wissler und Protzen" class="accent-text">Wissler &amp; Protzen <i class="fa-solid fa-external-link"></i></a></h3> (Seit 2022)
                                 </span>
                                 <ul class="work-details">
