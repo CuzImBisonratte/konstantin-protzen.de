@@ -292,7 +292,8 @@ if (date("md") < "0125") $age--;
                                     </h3> (Seit 2023)
                                 </span>
                                 <ul class="work-details">
-                                    <li>Mitglied der Schulkonferenz</li>
+                                    <li>Schülersprecher (Schuljahr 2025/2026)</li>
+                                    <li>Mitglied der Schulkonferenz (Seit 2024)</li>
                                     <li>Interessensvertretung</li>
                                     <li>Protokollf&uuml;hrung</li>
                                     <li>Klassensprecher</li>
