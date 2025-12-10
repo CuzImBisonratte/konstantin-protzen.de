@@ -1,0 +1,33 @@
+.start {
+    position: absolute;
+    bottom: 0.25rem;
+    left: 0.25rem;
+    width: min(calc(80dvw - var(--dock-size)), max(40rem, 40dvw));
+    height: min(calc(80dvh - var(--dock-size)), max(40rem, 40dvh));
+    background-color: #ffffff88;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5rem;
+    gap: 0px 0px;
+    grid-template-areas:
+        "start_main"
+        "start_user";
+    box-shadow: #ffffff44 0px 0px 10px 2px;
+    border-radius: 0.5rem;
+    z-index: 950;
+}
+
+.start_main {
+    grid-area: start_main;
+    background-color: #1d2127;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.start_user {
+    grid-area: start_user;
+    background-color: #0d1117;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
